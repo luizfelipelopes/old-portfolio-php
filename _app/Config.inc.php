@@ -9,10 +9,10 @@ if ($_SERVER['SERVER_NAME'] == 'localhost'):
     define('DBSA', 'flowstate');
 
 else:
-    define('HOST', '#####');
-    define('USER', '#####');
-    define('PASS', '#####');
-    define('DBSA', '#####');
+    define('HOST', 'ro2padgkirvcf55m.cbetxkdyhwsb.us-east-1.rds.amazonaws.com');
+    define('USER', 'elztwdniwwubb7jx');
+    define('PASS', 'lwgo6gklrpda6d6r');
+    define('DBSA', 'wol4mpkum9x66s90');
 endif;
 
 
