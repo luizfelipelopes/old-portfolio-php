@@ -1,0 +1,81 @@
+Log de Notificações e consulta
+Hora da consulta: 11:09:02 -03
+HTTP: 200
+Código de Notificação: 4F67D53C630663064B96642D5F94D11E88BB
+Código de Transação: 0867CC13-0177-4EC2-9843-FB711A17CD95
+Status de Transação: 3
+-------------------------------------------------------------------------------------------------------------\\r\\nLog de Notificações e consulta
+Hora da consulta: 11:09:18 -03
+HTTP: 200
+Código de Notificação: 4F67D53C630663064B96642D5F94D11E88BB
+Código de Transação: 0867CC13-0177-4EC2-9843-FB711A17CD95
+Status de Transação: 3
+-------------------------------------------------------------------------------------------------------------\\r\\nLog de Notificações e consulta
+Hora da consulta: 11:14:21 -03
+HTTP: 200
+Código de Notificação: 3353957C3D583D588AA7746E2FAA7031758A
+Código de Transação: 6D94B365-84FB-4857-A674-AFB98AE78E54
+Status de Transação: 1
+-------------------------------------------------------------------------------------------------------------\\r\\nLog de Notificações e consulta
+Hora da consulta: 11:15:50 -03
+HTTP: 200
+Código de Notificação: 140BA1DD1FCA1FCA59AAA44ABF92AE76E638
+Código de Transação: 6D94B365-84FB-4857-A674-AFB98AE78E54
+Status de Transação: 3
+-------------------------------------------------------------------------------------------------------------\\r\\nLog de Notificações e consulta
+Hora da consulta: 11:16:58 -03
+HTTP: 200
+Código de Notificação: 140BA1DD1FCA1FCA59AAA44ABF92AE76E638
+Código de Transação: 6D94B365-84FB-4857-A674-AFB98AE78E54
+Status de Transação: 3
+-------------------------------------------------------------------------------------------------------------
+Log de Notificações e consulta
+Hora da consulta: 11:17:38 -03
+HTTP: 200
+Código de Notificação: 140BA1DD1FCA1FCA59AAA44ABF92AE76E638
+Código de Transação: 6D94B365-84FB-4857-A674-AFB98AE78E54
+Status de Transação: 3
+-------------------------------------------------------------------------------------------------------------
+Log de Notificações e consulta
+Hora da consulta: 11:18:20 -03
+HTTP: 200
+Código de Notificação: 140BA1DD1FCA1FCA59AAA44ABF92AE76E638
+Código de Transação: 6D94B365-84FB-4857-A674-AFB98AE78E54
+Status de Transação: 3
+-------------------------------------------------------------------------------------------------------------
+
+Log de Notificações e consulta
+Hora da consulta: 11:23:32 -03
+Código de Notificação: 140BA1DD1FCA1FCA59AAA44ABF92AE76E638
+Código de Transação: 6D94B365-84FB-4857-A674-AFB98AE78E54
+Status de Transação: 3
+-------------------------------------------------------------------------------------------------------------
+
+Log de Notificações e consulta
+Hora da consulta: 11:27:55 -03
+Código de Notificação: 140BA1DD1FCA1FCA59AAA44ABF92AE76E638
+Código de Transação: 6D94B365-84FB-4857-A674-AFB98AE78E54
+Status de Transação: 3
+-------------------------------------------------------------------------------------------------------------
+
+Log de Notificações e consulta
+Hora da consulta: 11:28:20 -03
+Código de Notificação: 140BA1DD1FCA1FCA59AAA44ABF92AE76E638
+Código de Transação: 6D94B365-84FB-4857-A674-AFB98AE78E54
+Status de Transação: 3
+-------------------------------------------------------------------------------------------------------------
+
+Log de Notificações e consulta
+Hora da consulta: 15:50:25 -03
+Código de Notificação: 0315168224152415767EE4C4FFA434656534
+Código de Transação: B71618C5-4C5E-417E-AF76-61EF3B5F21C7
+Status de Transação: 6
+-------------------------------------------------------------------------------------------------------------
+
+Log de Notificações e consulta
+Hora da consulta: 15:58:41 -03
+Código de Notificação: C198FC3A839683962EB224E94FBEF67B8CC3
+Código de Transação: 9AD2EB7C-8662-43A6-8C55-3AA7889826CF
+Status de Transação: 3
+-------------------------------------------------------------------------------------------------------------
+

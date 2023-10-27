@@ -1,0 +1,17 @@
+body{font-size: 1em !important; font-family: 'Lato', sans-serif !important; text-align: justify; padding: 20px;}
+h1{font-size: 2em; font-weight: initial; color: #111; margin-bottom: 15px;}
+h2{font-size: 1.5em; font-weight: bold; color: #111; margin-bottom: 15px;}
+h3{font-size: 1.2em; font-weight: bold; color: #111; margin-bottom: 15px;}
+h3{font-size: 1em; font-weight: bold; color: #111; margin-bottom: 15px;}
+p{font-weight: initial; color: #333;}
+pre{margin: 15px 0; padding: 10px; background: #E6DED1; color: #111; font-family: monospace; font-size: 16px; white-space: normal;}
+blockquote{padding: 30px; background: #f9fce0; margin: 30px 0; font-style: italic; margin-left: 5%; }
+a:hover{text-decoration: underline;}
+ul{display: block; margin: 20px auto;}
+ul li{list-style-type: inherit !important; margin-bottom: 10px; margin-left: 7%; margin-right: 2%;}
+img{margin: 20px auto;}
+
+/*h2{font-size: 1.8em !important;}
+h3{font-size: 1.6em !important;}
+h4{font-size: 1.4em !important;}*/
+/*#tinymce .mceContentBody { font-family: 'Lato', sans-serif !important; font-size: 1em;}*/

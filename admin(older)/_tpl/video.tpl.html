@@ -1,0 +1,28 @@
+<div class="container bg-body posts-item" id="#video_id#">
+
+    <article class="video_item video_destaque">
+        <div class="video">
+            <div class="ratio j_previa_video"><iframe class="media" src="https://www.youtube.com/embed/#video_url#" frameborder="0" allowfullscreen></iframe></div>
+        </div>
+    </article>
+    #botao_status#
+    #botao_destaque#
+
+    <div class="content">
+        <div class="post-content">
+            <h1 class="posts-item-titulo">#video_title#</h1>
+            <p class="posts-item-categoria">#data_formatada# </p>
+        </div>
+
+        <div class="botoes al-center">
+            <a class="btn btn-blue-baby radius shorticon shorticon-ver" title="Ver Destaque" target="_blank" href="#HOME#"></a>
+            <a class="btn btn-blue radius shorticon shorticon-editar" title="Editar Destaque" href="#HOME#/admin/dashboard.php?exe=videos/create&id=#video_id#"></a>
+            <a class="btn btn-pink radius shorticon shorticon-excluir j_confirm" title="Excluir Destaque" id="#video_id#"></a>
+            <div class="bloco-confirm" id="#video_id#">
+                <small class="msg-confirm">Deseja excluir?</small>
+                <a class="btn btn-orange btn-confirm btn-confirm-sim radius j_excluir" title="Confirmar Exclusão" href="#" attr-action="delete_video" id="#video_id#">Sim</a>
+                <a class="btn btn-pink btn-confirm btn-confirm-nao radius j_cancelar" title="Cancelar Exclusão" href="#" id="#video_id#">Não</a>
+            </div>
+        </div>
+    </div>
+</div>    

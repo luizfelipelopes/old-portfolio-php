@@ -1,0 +1,14 @@
+Log de Notificações e consulta
+Hora da consulta: 10:09:46 -02
+Código de Notificação: F0F7D4A287C687C6E3CFF4D98F98C7FBDC73
+Código de Transação: 1AA2B06F-1F74-4C46-91BE-F5E29729DE4F
+Status de Transação: 3
+-------------------------------------------------------------------------------------------------------------
+
+Log de Notificações e consulta
+Hora da consulta: 10:13:07 -02
+Código de Notificação: F0F7D4A287C687C6E3CFF4D98F98C7FBDC73
+Código de Transação: 1AA2B06F-1F74-4C46-91BE-F5E29729DE4F
+Status de Transação: 3
+-------------------------------------------------------------------------------------------------------------
+

@@ -1,0 +1,34 @@
+#comentario_cabecalho#
+<img height="80" class="round" title="#comentario_author#" alt="[#comentario_author#]" src="#comentario_cover#" />
+<div class="comentarios-info">
+    <h1 class="container js_get_author">#comentario_author#</h1>
+    <span class="comentarios-data">Em #data_formatada#</span>
+    <span class="comentarios-categoria font-bold">Segmento: #comentario_type#</span>
+    <span class="comentarios-categoria">#produto_title#</span>
+    <img title="#comentario_author#" alt="[#comentario_author#]" src="#comentario_estrelas#" />
+    <div class="js_get_content">#comentario_content#</div>
+    <div class="comentarios-botoes container ds-inblock m-top1" id="#comentario_id#" attr-relacao="pai" attr-segment="#comentario_segment_id#">
+        
+        <div class="botoes ds-inblock">
+
+            <div class="comentarios-botoes-status ds-inblock js_status" id="#comentario_id#">
+                #botao_status#
+            </div>         
+
+            <a title="Ver Respostas" class="btn btn-blue radius shorticon shorticon-comentarios m-top1 j_responder"></a>
+            <a id="#comentario_id#" title="Editar Comentário" class="btn btn-orange radius shorticon shorticon-editar m-top1 js_editar_comentario"></a>
+            <a title="Excluir" class="btn btn-red radius shorticon shorticon-excluir m-top1 j_confirm"></a>
+            <div class="bloco-confirm" id="#comentario_id#">
+                <small class="msg-confirm">Deseja excluir?</small>
+                <a class="btn btn-orange btn-confirm btn-confirm-sim radius j_excluir" title="Confirmar Exclusão" href="#" attr-action="delete_comentario" id="#comentario_id#">Sim</a>
+                <a class="btn btn-pink btn-confirm btn-confirm-nao radius j_cancelar" title="Cancelar Exclusão" href="#" id="#comentario_id#">Não</a>
+            </div>
+        </div>
+    </div> 
+</div>
+
+#resposta_cabecalho#
+#resposta_content#
+#resposta_fim#
+#resposta_textarea#
+#comentario_fim#

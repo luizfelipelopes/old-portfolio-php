@@ -1,0 +1,1432 @@
+@charset "utf-8"
+
+
+/*RESET*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	margin:0;
+	padding: 0;
+}
+
+#box{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+	background: #ccc;
+}
+
+.container{
+	width: 100%;
+	float: left;
+}
+
+
+.titulo_principal{
+	display: none;
+}
+
+
+/*HEADER*/
+header{
+	height: 200px;
+	width: 100%;
+	background: #fff;
+}
+
+.header_logo{
+
+	width: 250px;
+	height: 108px;
+	margin: 20px 0 0px 92px;
+	float: left;
+
+}
+
+
+
+.header_menu{
+
+	width: 425px;
+	height: 35px;
+	float: right;
+	margin: 45px 18px 0 0; 
+	//background: #333;
+
+}
+
+
+.header_menu ul{
+
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+
+}
+
+.header_menu ul li{
+
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.header_menu ul li a{
+
+	text-decoration: none;
+	margin: 0 7px;
+	padding: 0;
+	font-size: 20px;
+	font-family: 'Candara';
+	color: #666;
+	font-weight: 300;
+}
+
+.header_menu ul li ul{
+
+	top: 75px;
+	left: 900px;
+	padding: 0px;
+	float: left;
+	width: 150px;
+	display: none;
+	position: absolute;
+	z-index: 1000;
+	background: #EBEBEB;
+}
+
+.header_menu ul li:hover ul{
+	display: block;
+	
+}	
+
+
+.header_menu ul li ul li{
+	
+	border-bottom: 1px solid #D7EC97;
+	width: 100%;
+	border-left: 2px solid #D7EC97;
+}
+
+.header_menu ul li ul li a{
+	margin: 0;
+	padding: 2px 20px;
+	float: left;
+	display: block;
+	font-size:18px;
+	font-family: 'Candara', serif;
+	
+}
+
+.header_menu ul li ul li:hover{
+	background: #EBEBEB;
+	border-left:2px solid #00B200;
+}
+
+.header_menu ul li.link{
+	padding-top: 5px;
+	//background: #000;
+}
+
+
+.header_menu ul li a:hover{
+
+	color: #00B200;
+	font-weight: bold;
+}
+
+
+.header_redes_sociais{
+	margin: 44px 80px 0 0;
+	float: right; 	
+
+}
+
+.header_redes_sociais img{
+	margin: 1.5px;
+}	
+
+.header_search{
+
+	width: 100%;
+	height: 90px;
+	float: left;
+	position: absolute;
+	top: 110px;
+	background: url("../img/search.png");
+	background-size: 100%;
+}
+
+.header_search form{
+
+	float: left;
+	margin: 42px auto 0 210px;
+
+}
+
+.header_search input{
+
+	width: 750px;
+	height: 25px;
+	margin: 4px;
+	float: left;
+	font: 16px 'Josefin Slab', serif;
+	color: #999;
+	font-weight: regular;
+	padding: 2px 0 3px 10px;
+}
+
+.header_search button{
+
+	background: #fff;
+	border: 0;
+	margin: 5px 4px 4px 4px;
+	padding: 3px 3px 1px 3px;
+	float: left;
+
+}
+
+.header_search .carrinho{
+
+	width: auto;
+	height: 58px;
+	background: #00A32E;
+	float: left;
+	margin: 31px auto 0 0px;
+}
+
+.header_search .carrinho img{
+
+	margin: 22px 4px auto 4px;
+	float: left;
+	width: 25px;
+	height: 18px;
+
+}
+
+.header_search .carrinho p{
+	margin: 21px 10px auto auto;
+	width: auto;
+	height: auto;
+	float: right;
+	color: #fff;
+	font-size: 18px;
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: 100;
+
+}
+
+.header_search .bem_vindo{
+
+	color: #fff;
+	margin: 55px 20px auto 15px;
+	font:14px 'Josefin Slab', serif;
+	float: left;
+	width: auto;
+	max-width: 115px;
+	min-width:75px;
+	
+}
+
+
+/*SLIDE*/
+.slide{
+
+	width: 100%;
+	height:375px;
+	background: #333;
+	overflow: hidden;
+	margin: 0;
+}
+
+
+
+.slide #prev{
+	
+	float: left;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	margin:180px 50px;
+	//top: 280px;
+	//left: 100px;
+	z-index: 2;
+	cursor: pointer;
+}
+	
+
+
+.slide #next{
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	float: right;
+	//top: 280px;
+	margin: 180px 1270px;
+	z-index: 2;
+	cursor: pointer;
+}
+
+
+
+
+
+.slide ul{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+}
+
+
+.slide li{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+}
+
+
+.slide img{
+
+	width: 100%;
+	height: auto;
+
+}
+
+.slide h1{
+	float: left;
+	position: absolute;
+	top: 10px;
+	left: 108px;
+	font: 46px 'Candara';
+	color: #fff;
+	font-weight: 500;
+	width: 580px;
+	text-shadow: 2px 3px 7px #333;
+}
+
+.slide p{
+	float: left;
+	position: absolute;
+	top: 160px;
+	font: 26px Candara;
+	color: #fff;
+	text-shadow: 2px 3px 7px #333;
+	left: 108px;
+	font-weight: 100;
+	
+}
+
+.slide .preco_slide{
+	font: 38px 'Droid Sans', sans-serif;
+		
+}
+
+.btn_comprar_destaque{
+	border: 2px solid #fff;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.btn_comprar_destaque a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.btn_comprar_destaque a:hover{
+	color: #333;
+}	
+
+.btn_comprar_destaque:hover{
+
+	background: #EBEBEB;
+	border: 3px solid #333;
+	
+}
+
+
+/*CONTENT*/
+main{
+	width: 100%;
+	height: auto;
+}
+
+.content_sidebar{
+
+	width: 226px;
+	height: auto;
+	background: #fff;
+	//border-right:1px solid #EBEBEB;
+	//box-shadow: 1px 0px 1px #ccc;
+	float: left;
+	padding: 10px;
+}
+
+.content_sidebar h1{
+
+	font: 20px 'Josefin Slab', serif;
+	font-weight: bold;
+	color: #444;
+	margin: 40px 30px 10px 30px;
+
+}
+
+
+.content_sidebar ul{
+
+	list-style: none;
+	margin: 19px;
+	padding: 0;
+	float: left;
+
+}
+
+.content_sidebar ul li{
+
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.content_sidebar ul li a{
+
+	text-decoration: none;
+	color: #444;
+	font: 16px Candara;
+	margin: 10px;
+}
+
+.content_sidebar ul li.link_categoria {
+
+	padding: 8px 0 8px 5px;
+
+}
+
+.content_conteudo{
+	background: #fff;
+	width: 1097px;
+	height: auto;
+	float: right;
+	margin-bottom: 80px;
+}
+
+.content_conteudo h1.caminho{
+
+	font: 16px 'Josefin Slab', serif;
+	font-weight: bold;
+	color: #444;
+	margin: 35px 85px 20px 80px;
+
+}
+
+
+.produto{
+	border: 1px solid #ccc;
+	width: 211px;
+	height: 375px;
+	background: #EEEEEE;
+	margin: 20px 0;
+	float: left;
+	box-shadow: 0px 1px 2px #83ED83;
+}
+
+
+
+.produto span{
+	float: left;
+}
+
+.produto h1{
+
+	float: left;
+
+}
+
+
+.content_conteudo ul{
+	margin: 0 30px;
+	padding: 0;
+	list-style: none;
+	float: left;
+}
+
+
+.content_conteudo ul li{
+	margin: 0 65px;
+	padding: 0;
+	float: left;
+}
+
+
+
+
+.corpo_produto{
+		position: absolute;
+		margin: 170px 0 170px -3px;
+		padding: 0;
+		z-index: 2;
+		float: left;
+
+}
+
+.corpo_produto img{
+	width: 103%;
+	float: left;
+	margin: 0;
+}
+
+
+.info_produto{
+	float: left;
+	position: relative;
+	margin: 180px 25px;
+	z-index: 3;
+}
+
+
+.info_produto h1{
+
+	float: left;
+	font: 21px Candara;
+	color: #444;
+	margin: 25px 0 0 9px;
+
+}
+
+.info_produto p{
+
+	font: 13px 'Droid Sans', sans-serif;
+	color: #444;
+	float: left;
+	margin: 2px 12px;
+}
+
+.info_produto span {
+	float: left;
+	font: 28px 'Droid Sans', sans-serif;
+	color: #00A32E;
+	font-weight: bold;
+	margin-left: 12px;
+}
+
+.btn_comprar {
+	float: left;
+	background: url("../img/botao_comprar.png") 100%;
+	width: 133px;
+	height: 40px;
+	margin: 14px;
+}
+
+.btn_comprar .txt_btn{
+	float: left;
+	margin: 3px 7px 3px 2px;
+	font: 13px 'Droid Sans', sans-serif;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+}
+
+
+
+.tapete{
+	width: 197px;
+	position: absolute;
+	margin: 7px 6px;
+	z-index: 1;
+}
+
+.tapete img{
+	width: 100%;
+}
+
+
+
+
+
+
+/*CLEAR*/
+.clear{
+	clear: both;
+}
+
+/*FOOTER*/
+footer .footer{
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+footer .antirodape{
+	margin: 0;
+	width: 100%;
+	height: 344px;
+	background: url("../img/antirodape.jpg");
+}
+
+
+.formas_pagamento{
+	margin: 100px 107px;
+	width: 350px;
+	height: 107px;
+	float: left;
+}
+
+
+.formas_pagamento img.icone_cartao{
+
+	float: left;
+	margin-bottom: 5px;
+
+}
+
+
+.formas_pagamento h1{
+	font: 24px 'Josefin Slab', serif;
+	font-weight: bold;
+	color:#EEEEEE;
+	float: left;
+	margin: 10px 0 0 0;
+	padding: 0;	
+
+}	
+
+.formas_pagamento img.divisao{
+
+	float: left;
+
+}	
+
+
+.formas_pagamento img.banner_pagseguro{
+	float: left;
+	width: 340px;
+	height: 50px;
+	margin: 15px 0 0 5px;
+}
+
+.menu_rodape{
+
+	float: left;
+	margin: 90px 60px;
+}
+
+.menu_rodape ul{
+
+	float: left;
+	margin:0;
+	padding: 0;
+	list-style: none;
+
+}
+
+
+.menu_rodape ul li{
+
+	margin:15px 0;
+	padding: 0;
+	text-align: center;
+}
+
+.menu_rodape ul li a{
+
+	text-decoration: none;
+	font: 20px Candara;
+	color: #EEEEEE;
+
+}
+
+.contatos{
+	margin:90px 90px;
+	float: right;
+	width: 370px;
+	height: auto;
+}
+
+
+.contatos .icone_balao{
+	float: left;
+	margin-bottom: 5px;
+}
+
+.contatos h1{
+	margin: 15px 0 0 0;
+	float: left;
+	font: 24px 'Josefin Slab', serif;
+	font-weight: bold;
+	color: #EEEEEE;
+
+
+}
+
+.contatos span{
+	font-size: 23px;
+	margin: 0 12px 0 5px;
+
+}
+
+.contatos p{
+	margin: 5px 0;
+	font:15px Candara;
+	color: #EEEEEE;
+	font-weight: normal;
+
+}
+
+.contatos .divisao{
+	float: left;
+}
+
+.contatos .email{
+	float: left;
+	margin-left: 12px;
+}
+
+
+.contatos .bloco_telefone{
+	float: left;
+	margin-left: 12px;
+}
+
+.icone_telefone{
+	float: left;
+}
+
+.telefone{
+	float: left;
+}
+
+.contatos .bloco_endereco{
+	float: left;
+	margin-left: 12px;
+}
+
+
+.icone_endereco{
+	float: left;
+}
+
+.bloco_endereco .endereco{
+float: left;
+width: 320px;
+}
+
+
+
+footer .rodape{
+	width: 100%;
+	height: 80px;
+	background: #008C28;
+	margin: 0;
+}
+
+
+.rodape .rodape_txt{
+	float: left;
+	font: 12px 'Josefin Slab', serif;
+	font-weight: bold;
+	color: #fff;
+	margin: 20px 70px;
+}
+
+.rodape .rodape_logo{
+	float: right;
+	margin: 0 110px;
+}
+
+
+/*Página Quem Somos*/
+.quem_somos{
+	font: 16px Candara;
+	color: #444;
+	text-align: justify;
+}
+
+.titulo_quem_somos{
+	font: 32px 'Josefin Slab', serif;
+	color: #444;
+	font-weight: 100;
+}
+
+.content_quem_somos{
+	padding: 0px 100px;
+	width: 700px;
+	margin: 0 30px;
+}
+
+.content_quem_somos p{
+	width: 700px;	
+}
+
+
+/*Página Fale Conosco*/
+.fale_conosco{
+	font: 16px Candara;
+	color: #444;
+	text-align: justify;
+}
+
+.titulo_fale_conosco{
+	font: 32px 'Josefin Slab', serif;
+	color: #444;
+}
+
+.content_fale_conosco{
+
+	margin: 10px 60px 35px 90px;	
+	width: 420px;
+	float: left;
+}
+
+
+.divisao_forms{
+	float: left;
+	margin: 40px 0;
+}
+
+.content_formulario{
+	background:#fff;
+	width: auto;
+	height: auto;
+	float: left;
+	margin: 50px 30px 100px 60px;
+	padding: 20px; 
+	border: 1px solid #c0c0c0;
+	border-radius: 5px;
+	min-width: 250px;
+}
+
+.formulario{
+	width: 300px;
+	height: auto;
+}
+
+.formulario span{
+
+	font: 16px 'Josefin Slab', serif;
+	color: #444;
+	float: left;
+	width: 200px;
+
+}
+
+.formulario input{
+	width: 100%;
+	height: 20px;
+	box-shadow: 1px 0px 2px #ccc;
+	font: 14px Candara;
+	margin: 10px 0;
+}
+
+.formulario textarea{
+	width: 100%;
+	border: 2px solid #c0c0c0;
+	box-shadow: 0px 1px 1px #ccc;
+	font: 14px Candara;
+}
+
+input.btn_form{
+	height: 40px;
+	font: 16px 'Josefin Slab', serif;
+	background:green;
+	border: 0;
+	padding: 5px;
+	color: #fff;
+	margin: 5px 3px;
+	border: 1px solid #EBEBEB;
+	border-radius: 5px;
+}
+
+/*Página Detalhes*/
+
+
+
+.descricao_produto{
+	float: left;
+	width: 530px;
+	height: auto;
+	margin: 0 50px;
+
+}
+
+
+.descricao_produto img{
+
+	float: left;
+	margin: 30px 0 0 0;
+
+
+}
+
+.content_detalhes{
+float: left;
+width: 960px;
+margin: 20px 85px;
+}
+
+.titulo_detalhes{
+
+	font: 32px 'Josefin Slab', serif;
+	color: #444;
+//	float: left;
+	margin: 0 0 15px 0;
+
+}
+
+.content_detalhes .preco{
+	font: 30px 'Droid Sans', sans-serif;
+	font-weight: bold;
+	color: #00A32E;
+	float: left;
+}
+
+
+
+.content_detalhes p{
+font: 16px Candara;
+color: #444;
+float: left;
+
+}
+
+
+.content_detalhes .detalhes{
+	text-align: justify;
+}
+
+
+.content_detalhes .estoque{
+
+	color: #00B200;
+	font: 16px Candara;
+	float: left;
+
+}
+
+
+
+.content_detalhes .info_quantidade{
+
+	width: 360px;
+	height: auto;
+	float: left;
+}
+
+.content_detalhes .detalhes_quantidade{
+
+	width: 360px;
+	float: left;
+
+}
+
+.content_detalhes .txt_detalhes{
+	color: #444;
+	font: 16px Candara;
+	float: left;
+	margin: 5px 0;
+}
+
+.quantidade{
+	float: left;
+	border: 1px solid #ccc;
+	width: 65px;
+	height: 17px;
+	margin: 0 10px 0 7px;
+	padding: 10px 0;
+	text-align: center;
+	box-shadow: 1px 1px 1px #ccc;
+	font: 18px Candara;
+}
+
+.btn_confirmar{
+	background: url("../img/botao_comprar.png") 100%;
+	width: 133px;
+	height: 40px;
+	float: left;
+	margin: 0 5px;
+}
+
+
+.btn_confirmar .txt_confirmar{
+	float: left;
+	margin: 10px 27px;
+	font: 14px 'Droid Sans', sans-serif;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+
+}
+
+.content_detalhes .categoria{
+
+	margin:  0 10px;
+}
+
+.fotos{
+	width: 260px;
+	height: auto;
+	float: left;
+}
+
+.imagem_destaque{
+	float: left;
+	background: #fff;
+	width: 260px;
+	height: 251px;
+	box-shadow: 1px 1px 4px #777;
+}
+
+.imagem_destaque img{
+	margin: 30px 30px;
+}
+
+
+
+.galeria{
+	margin: 20px 50px;
+	background: #fff;
+	float: left;
+}
+
+.galeria img{
+	width: 43px;
+	height: 40px;
+	margin: 0 2px;
+	box-shadow: 1px 1px 1px #777    
+}
+
+
+.divisao_embaixo{
+	float: left;
+	margin: 70px 0 80px 0;
+}
+
+.menu_detalhes{
+	float: left;
+	width: 248px;
+	height: 87px;
+	font:24px 'Josefin Slab', serif;
+	color: #444;
+	margin: 50px 0 0 20px;
+
+}
+
+.menu_detalhes h1{
+	float: left;
+	margin: 0;
+}
+
+.menu_detalhes img{
+	float: left;
+}
+
+
+.menu_detalhes .seta{
+	margin: 0 0 0 10px;
+}
+
+.menu_detalhes .divisao_detalhes{
+	margin: 10px 0;
+}
+
+.especificacoes{
+	float: left;
+	width: 554px;
+	height: 352px;
+	margin: 50px 60px;
+	
+	color: #444;
+}
+
+.especificacoes .titulo_1{
+font-size: 24px;
+margin: 0 99px;
+float: left;
+font-family: 'Josefin Slab', serif;
+}
+
+.especificacoes .titulo_2{
+	font-size: 18px;
+	margin: 5px 0;
+	float: left;
+	font-family: 'Josefin Slab', serif;
+}
+
+
+.especificacoes_tecnicas{
+	width: 400px;
+	margin: 0 100px;
+}
+
+.menu_1{
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.menu_2{
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.menu_1 ul{
+	float: left;	
+	margin: 10px 2px;
+	padding: 0;	
+	width: 300px;
+	list-style: none;
+}
+
+.menu_1 ul li{
+	margin: 0 40px 0 0;
+	padding: 0;
+	float: left;
+	display: block;
+	font: 16px Candara;
+	width: 250px;
+}
+
+
+.menu_2 ul{
+	margin: 0;
+	padding: 0;	
+	width: auto;
+	list-style: none;
+	float: left;
+}
+
+.menu_2 ul li{
+	margin: 0 70px 0 30px;
+	padding: 0;
+	font: 16px Candara;
+	float: left;
+	width: 300px;
+}
+
+.especificacoes_tecnicas img{
+	margin: 20px 10px;
+}
+
+
+/*Carrinho*/
+
+.titulo_carrinho{
+
+	font: 32px 'Josefin Slab', serif;
+	color: #444;
+	margin-left: 140px;
+
+}
+
+
+table.produtos{
+	margin: auto auto auto 140px;
+}
+
+
+table th{
+
+	background:#F0F0E1;
+	font: 18px 'Josefin Slab', serif;
+	font-weight: bold;
+	color: #444;
+	padding: 10px;
+}
+
+table tr{
+	margin: 0;
+	background: #FBFBFB;
+}
+
+table img.divisao_carrinho{
+	float: right;
+}
+
+table img.divisao_carrinho_ultima{
+	float: left;
+}
+
+table th.quantidade_carrinho_titulo{
+	width: 100px;
+}
+
+table th p{
+	margin: 0 10px;
+	text-align: center;
+}
+
+
+table td{
+	padding: 15px 25px;
+}
+
+
+table td .excluir{
+	margin: 10px 0;
+
+}
+
+table td .tapete_carrinho{
+	
+	width: 73px;
+	height: 44px;
+}
+
+
+table td.produto_carrinho{
+	font: 16px Candara;
+	color: #444;
+}
+
+table td.preco_carrinho{
+font: 18px 'Droid Sans', sans-serif;;
+font-weight: bold;	
+color: #00A32E;
+}
+
+table td .quantidade_carrinho{
+float: left;
+	border: 1px solid #ccc;
+	width: 60px;
+	height: 15px;
+	margin: 0 10px;
+	padding: 5px 0 10px 0;
+	text-align: center;
+	box-shadow: 1px 1px 1px #ccc;
+	font-family: Candara;
+	color: #444;
+	font-size: 18px;
+
+
+}
+
+.confirmar_compra{
+	width: 374px;
+	float: right;
+	margin: 90px 220px;
+
+}
+
+.titulo_total_carrinho{
+font: 24px 'Josefin Slab', serif;
+font-weight: bold;
+color: #444;
+}
+
+
+.titulo_subtotal{
+font: 18px 'Josefin Slab', serif;
+font-weight: bold;
+color: #444;
+background:#F0F0E1;
+width: 157px;
+height: 33px;
+}
+
+.preco_subtotal{
+	font: 18px 'Droid Sans', sans-serif;
+	font-weight: bold;
+	color: #00A32E;
+	width: 157px;
+}
+
+.titulo_total{
+font: 18px 'Josefin Slab', serif;
+font-weight: bold;
+color: #444;
+background:#F0F0E1;
+width: 157px;
+height: 33px;
+
+
+}
+
+.preco_total{
+	font: 18px 'Droid Sans', sans-serif;
+	font-weight: bold;
+	color: #00A32E;
+	width: 157px;
+}
+
+.btn_confirmar_compra{
+
+	width: 374px;
+	height: 58px;
+	background: #00A32E;
+	margin: 30px 0;
+}
+
+.txt_confirmar_compra{
+	font: 20px 'Droid Sans', sans-serif;
+	font-weight: bold;
+	color: #fff;
+	margin: 16px 20px 10px 90px;
+	float: left;
+	width: auto;
+}
+
+
+.btn_confirmar_compra img{
+	margin: 12px 2px;
+	float: left;
+}
+
+/*Entrar/Cadastrar*/
+
+
+.content_entrar{
+
+	background:#fff;
+	width: 200px;
+	height: auto;
+	float: left;
+	margin: 35px 45px 100px 150px;
+	padding: 20px; 
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	min-width: 250px;
+
+}
+
+.content_entrar h1{
+
+	font: 32px 'Josefin Slab', serif;
+	color: #777;
+	float: left;
+	margin: 0;
+
+}
+
+.entrar{
+	font: 16px Candara;
+	color: #777;
+	float: left;
+}
+
+.form_entrar{
+	width: 100%;
+	height: auto;
+}
+
+.form_entrar input{
+	width: 100%;
+	height: 20px;
+	box-shadow: 1px 1px 2px #ccc;
+	font: 16px Candara;
+	margin: 10px 0;
+}
+
+.form_entrar textarea{
+	width: 100%;
+	border: 2px solid #c0c0c0;
+	box-shadow: 0px 1px 1px #ccc;
+	font: 16px Candara;
+}
+
+
+.content_conteudo span.ou{
+	font: 24px 'Josefin Slab', serif;
+	color: #777;
+	margin: 160px 2px;
+	float: left;
+	font-weight: bold;
+}
+
+.content_entrar span{
+	font: 16px 'Josefin Slab', serif;
+	color: #777;
+	float: left;
+
+}
+
+.content_cadastrar{
+	background:#fff;
+	width: 200px;
+	height: auto;
+	float: left;
+	margin: 35px 30px 100px 60px;
+	padding: 20px; 
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	min-width: 250px;
+}
+
+
+.content_cadastrar h1{
+
+	font: 32px 'Josefin Slab', serif;
+	color: #777;
+	float: left;
+	margin: 0;
+
+}
+
+.content_cadastrar span{
+	
+	font: 16px 'Josefin Slab', serif;
+	color: #777;
+	float: left;
+
+}
+
+
+.cadastrar{
+	font: 16px Candara;
+	color: #777;
+	float: left;
+}
+
+
+.form_cadastrar{
+	width: 100%;
+	height: auto;
+
+}		
+
+
+.form_cadastrar input{
+	width: 100%;
+	height: 20px;
+	box-shadow: 1px 1px 2px #ccc;
+	font: 16px Candara;
+	margin: 10px 0;
+}
+
+.form_cadastrar textarea{
+	width: 100%;
+	border: 2px solid #c0c0c0;
+	box-shadow: 0px 1px 1px #ccc;
+	font: 16px Candara;
+}
+
+
+
+input.btn_entrar{
+	height: 30px;
+	font: 16px 'Josefin Slab', serif;
+	background:green;
+	border: 0;
+	padding: 5px;
+	color: #fff;
+	margin: 5px 3px;
+	border: 1px solid #EBEBEB;
+	border-radius: 5px;
+}
+
+input.btn_cadastrar{
+	height: 30px;
+	font: 16px 'Josefin Slab', serif;
+	background:green;
+	border: 0;
+	padding: 5px;
+	color: #fff;
+	margin: 5px 3px;
+	border: 1px solid #EBEBEB;
+	border-radius: 5px;
+
+}

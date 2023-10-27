@@ -1,0 +1,57 @@
+<?php
+
+//POSTS
+define('POSTS_APP', '1');
+define('POSTS_APP_BLOCOS', '1');
+define('POSTS_APP_LISTA', '0');
+define('POSTS_APP_LISTA_MENOR', '0');
+define('POSTS_APP_CATEGORIAS', '1');
+define('POSTS_APP_MAIS_VISTOS_HOME', '0');
+define('POSTS_APP_MAIS_RECENTES_HOME', '0');
+define('POSTS_APP_MAIS_VISTOS_POST', '1');
+define('POSTS_APP_MAIS_RECENTES_POST', '1');
+define('POSTS_APP_RELACIONADOS', '1');
+
+//SIDEBAR
+define('SIDEBAR_POST_LEFT', '0');
+define('SIDEBAR_POST_RIGHT', '1');
+
+//COMENTARIOS
+define('COMENTARIOS_FACEBOOK', '0');
+define('COMENTARIOS_APP', '1');
+define('AVALIACAO_MEDIA', '0');
+define('MODERADOR', '0');
+define('AVATAR', '1');
+define('AVALIACAO', '0');
+define('FORM_FOTO', '0');
+define('FORM_NOME', '1');
+define('FORM_EMAIL', '1');
+define('FORM_CIDADE', '0');
+define('FORM_RESPOSTA_PAI', '1');
+define('FORM_RESPOSTA_FILHO', '0');
+
+//APPS FACEBOOK
+define('FACEBOOK_APP_SEGUIDORES_PERSONALIZADO_POST', '1');
+define('FACEBOOK_APP_POST', '1');
+define('FACEBOOK_APP_POST_COMPARTILHAR', '1');
+define('FACEBOOK_APP_COMENTARIOS', '1');
+define('FACEBOOK_APP_TIMELINE_POST', '0');
+
+//APPS YOUTUBE
+define('YOUTUBE_APP_POST', '1');
+
+//APPS INSTAGRAM
+define('INSTAGRAM_APP_FOTOS_SIDEBAR_POST', '0');
+define('INSTAGRAM_APP_FOTOS_HORIZONTAL_POST', '1');
+
+//PUBLICIDADE
+define('PUBLICIDADE_SIDEBAR_POST', '1');
+define('PUBLICIDADE_HORIZONTAL_POST', '1');
+define('PUBLICIDADE_AFILIADO_POST', '1');
+define('RAND_AFFILIATE_POST', '0');
+define('LIST_AFFILIATE_POST', '1');
+
+//LEADS POST
+define('LEADS_HORIZONTAL_POST', '0');
+define('LEADS_SIDEBAR_POST', '0');
+

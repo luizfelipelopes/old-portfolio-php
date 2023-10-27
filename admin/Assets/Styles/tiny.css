@@ -1,0 +1,101 @@
+/*RESET*/
+*, *:before, *:after{
+
+    margin:0;
+    padding:0;
+    outline:0;
+
+    font-family: 'Lato', sans-serif;
+    /*font-family: 'Lato', sans-serif;*/
+    font-size: 1em;
+    font-weight: 400;
+
+    line-height: 1.2;
+    letter-spacing: 0em;
+
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+}
+
+body{font-size: 1em !important; font-family: 'Lato', sans-serif !important; text-align: justify; padding: 10px 20px;}
+h1{font-size: 2em; font-weight: initial; color: #111; margin-bottom: 15px auto;}
+h2{font-size: 1.5em; font-weight: bold; color: #111; margin: 15px auto;}
+h3{font-size: 1em; font-weight: bold; color: #111; margin: 15px auto;}
+p{font-weight: initial; color: #333; margin: 5px auto;}
+pre{margin: 15px 0; padding: 10px; background: #E6DED1; color: #111; font-family: monospace; font-size: 16px; white-space: normal;}
+blockquote{padding: 30px; background: #f9fce0; margin: 30px 0; font-style: italic; margin-left: 5%; }
+a:hover{text-decoration: underline;}
+ul{display: block; margin: 20px auto;}
+ul li{list-style-type: inherit !important; margin-bottom: 10px; margin-left: 7%; margin-right: 2%;}
+/*.editor_img{float: left;  width: 100%; margin: auto 0.5% !important;}*/
+/*p img{width: auto !important;}*/
+/*p .img_half{width: 50% !important;}*/
+/*.alt_image_post{width: 99% !important; margin: auto 0.5% !important; float: left !important; background: #ccc; padding: 5px 10px;}*/
+/*.legenda_half{width: 50% !important; background: #ccc;}*/
+
+/*h2{font-size: 1.8em !important;}
+h3{font-size: 1.6em !important;}
+h4{font-size: 1.4em !important;}*/
+/*#tinymce .mceContentBody { font-family: 'Lato', sans-serif !important; font-size: 1em;}*/
+
+figure.image {
+    display: inline-block;
+    border: none;
+    margin: 15px 2px 15px 1px;
+    background: #f5f2f0;
+    /*background: #fbfbfb;*/
+    padding: 0 !important;
+    max-width: 100%;
+    height: auto;
+    max-height: 370px;
+}
+
+figure.align-center {
+    width: 90%;
+    margin: 15px 5%;
+    height: auto;
+}
+
+figure.align-left {
+    float: left;
+    width: 50%;
+    height: auto;
+    margin-right: 10px;
+}
+
+figure.align-right {
+    float: right;
+    width: 50%;
+    height: auto;
+    margin-left: 10px;
+}
+
+figure.image img {
+    /*margin: 8px 8px 0 8px;*/
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100%;
+    height: auto;
+    max-height: 330px;
+}
+
+figure.image figcaption {
+    margin: 6px 8px 6px 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+p embed,
+p video,
+p iframe,
+p iframe[style]{
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    position: absolute !important;
+    top: 0 !important;
+}

@@ -1,0 +1,672 @@
+body{background-image: url(../Images/fundo-bg.png); background-attachment: fixed;}
+a{color: #333;}
+
+/*CABECALHO*/
+.login_pedido{font-size: 0.8em; padding: 10px 0;}
+.login_pedido .bem-vindo{display: none;}
+.login_pedido .entrar{float: left;}
+.login_pedido .fechar_pedido{float: right;}
+
+@media(min-width: 768px){
+    .login_pedido .bem-vindo{display: block; float: left; margin-right: 2%;}
+}
+/*CABECALHO*/
+
+/*LOGO*/
+.logo{width: 50%;}
+@media(min-width: 768px){
+    .logo{width: 25%}
+}
+@media(min-width: 960px){
+    .logo{width: 22%}
+}
+@media(min-width: 1280px){
+    .logo{width: 18%}
+}
+/*LOGO*/
+
+
+/*PLUGIN FACEBOOK*/
+.siga_nos{display: none;}
+@media(min-width: 768px){
+    .siga_nos{display: inline-block; margin-top: 50px; margin-left: 0; width: 100px;}
+}
+/*PLUGIN FACEBOOK*/
+
+/*CARRINHO*/
+.carrinho{margin-top: 15px; position: relative; max-width: 100px; width: 40%; max-height: 57px;}
+.carrinho .icon-carrinho{width: 65%; float: left; padding: 5px; cursor: pointer;}
+.carrinho .icon-carrinho img{width: 100%; float: left; max-height: 50px;}
+.carrinho_descricao{display: none;}
+.carrinho_descricao span{float: left; width: 100%;}
+.carrinho_seta{float: right; width:35%; line-height: 3.63;}
+
+/*ITENS CARRINHO*/
+.lista_pedidos{position: absolute; background: #fff; z-index: 99; top: 60px; right: -10px; border: 1px solid #ccc; width: 250px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; display: none;}
+.lista{padding: 10px 20px; margin-bottom: 30px;}
+.lista .item:first-of-type{margin-top: 20px;}
+.lista .item{margin-bottom: 20px; font-size: 0.9em; float: left; border-bottom: 1px solid #f1f1f1; padding-bottom: 20px;}
+.lista .item:last-of-type{border:0;}
+.lista_pedidos .item .quantidade{float: left; width: 10%; margin-top: 12px; color: red; font-weight: 300;}
+.lista_pedidos .item .descricao_item{float: left; width: 80%; padding-right: 10px;}
+.lista_pedidos .item .descricao_item span{width: 100%; float: left; font-weight: 300; margin-bottom: 5px;}
+.descricao_item .categoria, .descricao_item .valor{color: red;}
+.lista_pedidos .item a{float: right; width: 10%; margin-top: 20px;}
+.resumo{width: 100%; float: left; background: #FFF6BF; padding: 10px; font-size: 0.9em; font-weight: 300;}
+.resumo .total{float: left; margin-top: 10px; color: red;}
+.resumo a{float: right;}
+/*ITENS CARRINHO*/
+
+@media(min-width: 320px){
+    .carrinho{margin-top: 35px;}
+}
+
+@media(min-width: 768px){
+    .carrinho{max-width: 180px;}
+    .carrinho .icon-carrinho{width: 30%}
+    .carrinho_descricao{display: block; float: left; width: 55%; font-size: 0.9em;}
+    .carrinho_descricao span:first-of-type{margin-top: 10px;}
+    .carrinho_descricao .numero_pedidos{font-weight: bold; color: red; width: 12%; margin: 0 !important;}
+    .carrinho_seta{width: 15%}
+}
+
+@media(min-width: 1280px){
+    .lista_pedidos{right: 0;}
+}
+
+/*CARRINHO*/
+
+/*MENU - OCULTA ALGUNS ITENS DO MENU */
+.menu{text-align: center;}
+ul{position: relative; font-size: 0.7em;}
+ul li{cursor: pointer; float: left; height: 45px;}
+ul li:hover{background: firebrick;}
+ul li a{color: #fff; line-height: 2.1;}
+.home{text-align: center; max-width: 40px; padding: 10px;}
+.home img{float: left;}
+.pedido{padding: 10px; border-right: 1px solid #333;}
+.oculto_desktop{display: none;}
+.oculto_mobile{position: absolute; z-index: 999; background: #fff; width: 100%; border: 2px solid #f1f1f1; border-radius: 5px; display: none;}
+.oculto_mobile a{color: red;}
+.oculto_mobile a:hover{text-decoration: underline;}
+.oculto_mobile:hover{background: #fbfbfb; cursor: pointer;}
+.contato{top: 35px; padding-bottom: 10px; padding-top: 10px; border-bottom: 0 !important;}
+.contato a{border:0;}
+.promocao{top: 65px; padding-top: 10px; padding-bottom: 10px; border-top: 0 !important;} 
+.reticencias a{float: left; font-size: 0.8em; height: 45px; padding-top: 8px; padding-left: 20px; padding-right: 20px; border-right: 1px solid #333;}
+
+@media(min-width: 320px){
+    ul{font-size: 0.8em;}
+}
+
+@media(min-width: 768px){
+    /*.menu{width: 700px; margin: 0 auto;}*/
+    .oculto_desktop{display: block; padding-left: 10px; padding-right: 10px; border-right: 1px solid #333;}
+    .reticencias{display: none;}
+
+}
+
+
+/*MENU - OCULTA ALGUNS ITENS DO MENU */
+
+/*SLIDE*/
+
+.promocoes{width: 100%; float: left;}
+.promocoes img{width: 100%; float: left; height: 230px;}
+.ofertas{display: none;}
+/*.secundario_item{left: -1000px;}*/
+
+@media(min-width: 960px){
+    .promocoes{width: 65%; margin-right: 5%;}
+    .promocoes img{height: auto;}
+    .ofertas{display: inline-block; width: 30%; height: auto; min-height: 260px; position: relative;}
+    .ofertas .js_ofertas{float: left; width: 100%;}
+    .ofertas .js_ofertas .ofertas_item{width: 100%; position: absolute;}
+    .ofertas img{width: 100%;}
+    .ofertas .controle{padding: 10px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; position: absolute; width:100%; height: 42px; top: 210px;}
+    .controle_categoria{width: 100%; margin: 2px auto; display: inline-block; font-weight: bold; float: left; position: absolute; z-index: 99; color: red;}
+    .controle .prev, .controle .next{font-weight: bold; font-size: 1.2em; color: #fff; padding: 0 10px; position: absolute; z-index: 999;}
+    .controle .prev{left:5px;}
+    .controle .next{right:5px;}
+}
+
+@media(min-width: 1280px){
+    .ofertas .controle{top: 268px;}
+    .controle_categoria{margin: 2px auto;}
+}
+
+@media(min-width: 1366px){
+    .ofertas .controle{top: 280px;}
+    .controle_categoria{margin: 7px auto;}
+}
+/*SLIDE*/
+
+/*POPUP SABORES TOPO*/
+.sabores_topo{position: fixed; z-index: 99; width: 100%; padding: 10px; display: none;}
+.valor_topo{display: none;}
+.sabor_unico{position:relative; background: brown; padding: 10px; border-radius: 5px; color: #fff;}
+.sabor_1{position:relative; background: brown; padding: 10px; border-radius: 5px; color: #fff; margin-bottom: 10px;}
+.sabor_2{position: relative; background: brown; padding: 10px; border-radius: 5px; color: #fff;}
+.icone_sabor_unico{width: 45px; height: 45px; border: 2px solid #fff; border-radius: 50%; padding: 5px 10px; float: left; margin-right: 15px; text-align: center; line-height: 2}
+.icone_sabor_1{width: 45px; height: 45px; border: 2px solid #fff; border-radius: 50%; float:left; margin-right: 15px;}
+.icone_sabor_2{width: 45px; height: 45px; border: 2px solid #fff; border-radius: 50%; float:left; margin-right: 15px;}
+.cta_sabor{float:left; width: 50%;}
+.icone_sabor_1 .numero_sabor{width: 50%; height: 42px; line-height: 1.2; padding: 10px; float: left; border-top-left-radius: 130px; border-bottom-left-radius: 130px;}
+.icone_sabor_1 .fatia_sabor{width: 50%; height: 42px; background: #fff; padding: 10px; float: right; border-top-right-radius: 130px; border-bottom-right-radius: 130px;}
+.icone_sabor_2 .numero_sabor{width: 50%; height: 42px; line-height: 1.2; padding: 10px; float: right; border-top-right-radius: 130px; border-bottom-right-radius: 130px;}
+.icone_sabor_2 .fatia_sabor{width: 50%; height: 42px; background: #fff; padding: 10px; float: left; border-top-left-radius: 130px; border-bottom-left-radius: 130px;}
+
+
+.js_add_inteiro, .js_mesa_inteira, .js_topo_inteiro{display: none;}
+
+.sabor_selecionado{position: absolute; background: #34495e; width: 100%; left:0; top: 0; padding: 23px;}
+.sabor_close{position: absolute; right: 0; top: 20px; margin-right: 10px; font-weight: bold; cursor: pointer;}
+.sabor1_selecionado{position: absolute; background: #34495e; width: 100%; left:0; top: 0; padding: 23px;}
+.sabor1_close{position: absolute; right: 0; top: 20px; margin-right: 10px; font-weight: bold; cursor: pointer;}
+.sabor2_selecionado{position: absolute; background: #34495e; width: 100%; left:0; top: 0; padding: 23px;}
+.sabor2_close{position: absolute; right: 0; top: 20px; margin-right: 10px; font-weight: bold; cursor: pointer;}
+
+/*.js_selecao_sabor_inteira, .js_selecao_sabor_metade{display: none;}*/
+
+@media(min-width: 320px){
+    .cta_sabor{width: 64%; margin-top: 10px;}
+    /*    .sabor_unico > .cta_sabor{margin-top: 20px;}*/
+}
+
+@media(min-width: 600px){
+    .sabor_1{width: 49%; float: left;}    
+    .sabor_2{width: 49%; float: right;}    
+}
+
+@media(min-width: 960px){
+    .sabores_topo{padding: 10px 120px;}
+    .valor_topo{display:block; background: #fff; float: left; width: 26%; margin-right: 2%; padding: 20px 10px; border-radius: 5px; border: 1px solid #999; font-size: 1.2em; font-weight: 300;}    
+    .numero_topo{color: red;}
+
+    .sabor_unico{width: 72%; float: left;}    
+    .sabor_1{width: 35%; float: left; margin-right: 2%;}    
+    .sabor_2{width: 35%; float: left;}    
+
+}
+/*POPUP SABORES TOPO*/
+
+/*PRODUTOS*/
+.barra_categorias{padding-left: 6%;}
+.barra_categorias h1{float: left; color: #fff; padding: 10px; font-size: 1em; padding-top: 12px;}
+.barra_categorias h1:first-of-type{border-top: 5px solid red; padding-top: 10px;}
+.barra_categorias h1 a{color: #fff; font-weight: 300;}
+.barra_categorias h1:hover{background: #E16F4D; color: #fff;}
+.barra_categorias.header_index h1:hover a{color: #fff;}
+.barra_categorias.header_contato h1{color: #333;}
+.barra_categorias.header_contato h1:hover{background: orange}
+.barra_categorias.header_shop h1 a{color: #333;}
+.barra_categorias h1:first-of-type a{color: #666;}
+
+
+.filtro_tamanhos{float: left; width: 100%; padding: 10px;}
+.filtro_tamanhos .tamanho_1{color: red; display: inline-block; padding: 5px; border-radius: 5px;}
+.filtro_tamanhos .select{background: red; color: #fff;}
+.filtros_direita{width: 100%; float:left; padding-left: 10px;}
+.filtro_ordem_alfabetica{background: red; color: #fff; padding: 5px; border-radius: 5px; float: left; margin-right: 5px;}
+.filtro_preco{background: #fff; color: red; float: left; margin-right: 5px; padding: 5px; padding-right: 7px; border-right: 1px dotted red;}
+.filtro_busca{background: red; float:left; width: 140px; border: 1px solid red; border-radius: 10px; margin-left: 2px;}
+.filtro_busca > form{margin: 0 !important; background: blue; height: 30px !important; padding: 0 !important;}
+.filtro_busca > form input{float: left; width: 80%; height: 30px; padding: 10px; margin:0 !important; border:0; border-radius: 0;}
+.filtro_busca > form button{float: right; width: 20%;height: 30px; padding: 5px; margin:0 !important; background: #fff; }
+
+.produtos article{text-align: center; padding: 5px; min-height: 300px;}
+.produtos article:hover{background: #ECE7D8; cursor: pointer; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+.produtos .pizza{position:relative; border: 8px solid brown; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; margin-bottom: 10px; width: auto;}
+.produtos img{border-radius: 50%;}
+.produtos .nome{font-size: 1em; margin-bottom: 10px;}
+.produtos .valor{color: brown; font-weight: bold;}
+
+.selecao_pizza_inteira{position: absolute; width: 100%; height: 100%; border-radius: 50%;}
+.selecao_pizza_inteira:hover{background: rgba(0,0,0,0.5);}
+.js_hover_inteiro{display: none;}
+
+.selecao_pizza_metades{position: absolute; width: 100%; height: 100%; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%;}
+.selecao_pizza_metades .metade_1{width: 50%; float: left; height: 100%; border-top-left-radius: 130px; -moz-border-top-left-radius: 130px; -webkit-border-top-left-radius: 130px; border-bottom-left-radius: 130px; -moz-border-bottom-left-radius: 130px; -webkit-border-bottom-left-radius: 130px;}
+.selecao_pizza_metades .metade_2{width: 50%; float:right; height: 100%; border-top-right-radius: 130px; -moz-border-top-right-radius: 130px; -webkit-border-top-right-radius: 130px; border-bottom-right-radius: 130px; -moz-border-bottom-right-radius: 130px; -webkit-border-bottom-right-radius: 130px;}
+
+.selecao_pizza_metades .metade_1:hover{background: rgba(0,0,0,0.5);}
+.selecao_pizza_metades .metade_2:hover{background: rgba(0,0,0,0.5);}
+
+
+
+
+@media(min-width:500px){
+    .filtros{padding-left: 20px;}
+    .filtro_tamanhos{width: 45%;}
+    .filtros_direita{width: 55%; margin-top: 10px; padding-right: 5px;}
+}
+
+@media(min-width:600px){
+    .filtro_tamanhos{width: 55%;}
+    .filtros_direita{width: 260px; margin-top: 10px; float: right; padding-right: 10px;}
+}
+
+@media(min-width:960px){
+    .filtros{padding-left: 50px;}
+    .filtro_tamanhos{width: 70%;}
+}
+
+@media(min-width:1024px){
+    .filtros{padding-right: 10px;}
+    .filtro_direita{padding-left: 0;}
+}
+
+@media(min-width:1280px){
+    .filtros{padding-right: 60px;}
+}
+
+@media(min-width:1366px){
+    .filtros{padding-left: 60px; padding-right: 45px;}
+}
+
+
+/*PRODUTOS*/
+
+
+/*DEPOIMENTOS*/
+.depoimentos h1{font-size: 1em;}
+/*DEPOIMENTOS*/
+
+/*FOOTER*/
+footer .antirodape{padding-top: 30px;}
+
+/*FORMAS DE PAGAMENTO*/
+.formas-pagamento{padding: 20px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; width: 100%;}
+.formas-pagamento h1{font-size: 1em; margin-bottom: 10px;}
+
+/*REDES SOCIAIS*/
+.redes-sociais{padding: 20px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; width: 100%;}
+.redes-sociais h1{font-size: 1em; margin-bottom: 10px;}
+.redes-sociais img{width: 30px;}
+
+/*NOVIDADES*/
+.campo_email{padding: 20px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; width: 100%;}
+.campo_email > form{text-align: center;}
+
+/*AVISO/TELEVENDAS*/
+.aviso-televendas{width: 100%; float: left; padding: 20px 10px;}
+/*AVISO*/
+.aviso{font-size: 0.9em;}
+/*TELEVENDAS*/
+.fone{max-width: 320px; margin: 0 auto;}
+.icon-telefone{float: left; width: 30%; padding: 39.5px 10px; margin-bottom: 30px; text-align: center;}
+.icon-telefone img{height: 42px;}
+.info-telefone{float: right; width: 70%; padding: 10px 10px;}
+.info-telefone h1{font-size: 1em; margin-bottom: 5px;}
+.info-telefone span{float: left; width: 100%; font-weight: 300;}
+/*RODAPE*/
+.rodape{padding: 10px; text-align: center;}
+.rodape .assinatura{font-size: 0.8em;}
+
+
+@media(min-width: 320px){
+    .formas-pagamento, .redes-sociais, .campo_email{width: 100% !important;}
+    .aviso-televendas{padding: 20px;}
+
+}
+
+@media(min-width: 400px){
+    .icon-telefone{padding: 30px 10px;}
+}
+
+@media(min-width: 500px){
+    .formas-pagamento, .redes-sociais{width: 46% !important; height: 110px;}
+    .campo_email{width: 100% !important;}
+
+}
+@media(min-width: 600px){
+    .formas-pagamento, .redes-sociais{width: 30% !important;}
+    .campo_email{width: 30% !important;}
+    .aviso{width: 50%; float: left; padding-right: 5px;}
+    .fone{float: right; width: 50%;}
+    .icon-telefone{padding: 39px 10px;}
+}
+
+@media(min-width: 712px){
+    .icon-telefone{padding: 29.5px 10px;}
+}
+
+@media(min-width: 960px){
+    .campo_email > form{text-align: left;}
+    .campo_email > form button{float: right;}
+    .fone{margin-top: 10px;}
+    .icon-telefone{padding: 29.5px 10px;}
+
+}
+@media(min-width: 1147px){
+    .formas-pagamento, .redes-sociais{height: 160px;}
+    .campo_email{font-size: 0.9em;}
+
+}
+
+/*FOOTER*/
+
+
+/*MESA PIZZA*/
+.mesa_pizza{text-align: center; background: rgba(0,0,0,0.5); padding: 20px 0;}
+.mesa_pizza h1{color: #fff; font-weight: bold;}
+
+.escolha_forma_pedido{width: 100%; max-width: 250px; margin: 0 auto;}
+
+/*SELETOR DE TIPO DE PIZZA*/
+.opcao_pizza{width: auto; margin: 0 auto; margin-bottom: 30px; display: inline-block;}
+.inteira{background: #fff; color: #333; padding: 4px 6px; border-radius: 50%; float: left; margin-right: 5px;}
+.metade{background: red; color: #fff; padding: 4px 6px; border-radius: 50%; float: left;}
+
+/*IMAGENS DA PIZZA*/
+.imagem_pizza_inteira{background: #663520; text-align: center; border-radius: 50%; border: 10px solid #381100; margin: 0 auto; margin-bottom: 30px;}
+.imagem_pizza_inteira .contorno{position: relative; border: 3px solid #521E08; border-radius: 50%; width: 100%; float: left; padding: 70px;}
+.imagem_pizza_inteira .lado_inteiro{line-height: 1.4; font-weight: bold; font-size: 4em; color: #381100;}
+.imagem_pizza_metades{background: #663520; text-align: center; border-radius: 50%; border: 10px solid #381100; margin: 0 auto; margin-bottom: 30px;}
+.imagem_pizza_metades .contorno{position: relative; border: 3px solid #521E08; border-radius: 50%; width: 100%; float: left;}
+.imagem_pizza_metades .lado_1{height: auto; line-height: 3; font-weight: bold; font-size: 4em; float: left; width: 50%; padding: 20px; border-top-left-radius: 130px; border-bottom-left-radius: 130px; border-right: 1px solid #381100; color: #381100;}
+.imagem_pizza_metades .lado_2{height: auto; line-height: 3; font-weight: bold; font-size: 4em; float: right; width: 50%; padding: 20px; border-top-right-radius: 130px; border-bottom-right-radius: 130px; border-left: 1px solid #381100; color: #381100;}
+.img_inteira{position: absolute; width: 100%; height: 100%; top: 0; left: 0; border-radius: 130px;}
+.img_metade1{position: absolute; clip: rect(0, 110px, 400px, 0); top: 0; left: 0; height: 100%; border-top-left-radius: 130px; border-bottom-left-radius: 130px;}
+.img_metade2{position: absolute; clip: rect(0, 230px, 400px, 110px); top: 0; right: 0; height: 100%; border-top-right-radius: 130px; border-bottom-right-radius: 130px;}
+
+/*QUADRO ADIÇÂO*/
+.sabores{float: right; width: 100%;}
+.add_sabor_inteiro, .add_sabor1, .add_sabor2{position: relative; background: #381100; width: 100%; height: 220px; float: left; margin: 0 auto; margin-bottom: 30px; text-align: center; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; color: #fff;}
+.ilustracao{width: 90px; height: 90px; margin: 50px auto 10px auto; text-align: center; border: 2px solid #fff; display: inline-block; font-size: 1.8em; border-radius: 50%;}
+.fatia{width: 100%; float: left; font-weight: bold; height: 90px; line-height: 3;}
+.cta_pedido{width: 100%; float: left;}
+
+.add_sabor1 .fatia{width: 50%; border-bottom-left-radius: 50px; border-top-left-radius: 50px;}
+.add_sabor1 .vazio{float: right; width: 50%; background: #fff; border-bottom-right-radius: 50px; border-top-right-radius: 50px; height: 88px;}
+.add_sabor2 .fatia{float: right; width: 50%; border-bottom-right-radius: 50px; border-top-right-radius: 50px;}
+.add_sabor2 .vazio{float: left; width: 50%; background: #fff; border-bottom-left-radius: 50px; border-top-left-radius: 50px; height: 88px;}
+
+.cardapio_ingredientes{position: absolute; background: #fff; color: #333; width: 100%; top: 0; text-align: left; border-radius: 5px;}
+.cardapio_sabor{background: red; color: #fff;  font-weight: bold; padding: 10px; float: left; width: 100%;}
+.titulo_ingredientes{background: green; color: #fff; padding: 5px; margin-bottom: 5px; float: left; width: 100%;}
+.titulo_ingredientes_close{position: absolute; top: 10px; right: 0; color: #fff; margin-right: 10px; font-weight: bold; cursor: pointer;}
+.cardapio_itens{height: 145px; overflow-y: scroll; width: 100%;}
+.cardapio_item{width: 100%; float: left; padding: 0 10px; margin-bottom: 5px;}
+.cardapio_item .item{float: left;}
+.cardapio_item .acrescimo{float: left; color: red; margin-left: 5px; display: none;}
+.cardapio_item .menos{float: right; background: red; color: #fff; padding: 0 5px; border-radius: 5px; margin-right: 2px; cursor: pointer;}
+.cardapio_item .mais{float: right; background: green; color: #fff; padding: 0 5px; border-radius: 5px; margin-right: 2px; cursor: pointer;}
+.cardapio_item .quantidade{float: right; border: 1px solid #ccc; padding: 0 5px;}
+.par{background: #f1f1f1;}
+
+/*BOTOES*/
+.valor_pedido{margin-bottom: 30px;}
+
+@media(min-width: 600px){
+    .mesa_pizza h1{width: 50%; float: left;}
+    .categoria_alimentos{float: right; width: 50%; margin-bottom: 40px; text-align: right;}
+    .mesa_pizza{text-align: left;}
+    .escolha_forma_pedido{float: left; width: 50%; text-align: center;}
+    .opcao_pizza{margin-bottom: 10px;}
+    .imagem_pizza_inteira{float: left; width: 100%;}
+    .sabores{float: right; width: 50%; margin-top: 0px; text-align: center;}
+    /*.passo_pedido{float: right;}*/
+    /*.valor_pedido{float: left; width: auto;}*/
+
+
+}
+
+@media(min-width: 960px){
+    .mesa_pizza h1{width: 50%; float: left;}
+    .categoria_alimentos{float: right; width: 50%; text-align: right;}
+    .opcao_pizza{width: auto;}
+    .sabores{text-align: left; float: right; margin-top: 10px; width: 70%;}
+    .add_sabor1{width: 49%; margin-right: 2%;}
+    .add_sabor2{width: 49%;}
+    .passo_pedido{float: right;}
+
+}
+
+/*MESA PIZZA*/
+
+/*PROMOÇÃO*/
+@media(min-width: 500px){
+    section.promocao{padding-top: 0;}
+    /*.promocao > .content{width: 800px;}*/
+    /*.promocao > .content img{float: left; max-width: 300px; margin-right: 10px;}*/
+}
+@media(min-width: 600px){
+    section.promocao > .content img{float: left; max-width: 300px; margin-right: 10px;}
+}
+@media(min-width: 960px){
+    section.promocao > .content{width: 800px;}
+}
+/*PROMOÇÃO*/
+
+/*LOGIN*/
+.login h1:hover{background: brown;}
+.login a{color: #fff !important;}
+.login a:hover{text-decoration: underline;}
+/*LOGIN*/
+
+
+/*CHECKOUT*/
+
+.itens_selecionados{width: 100%; float: left; margin-bottom: 30px;}
+.itens_selecionados h1{font-size: 1.2em; margin-bottom: 15px;}
+.itens_selecionados .item{float: left; width: 100%; margin-bottom: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #fff;}
+.itens_selecionados img{float: left; width: 40%; max-width: 70px; margin-bottom: 10px; }
+.itens_selecionados .descricao_produto .descricao_categoria{float: left; width: 100%; font-weight: 300; color: red; margin-bottom: 5px;}
+.itens_selecionados .descricao_produto .descricao_nome{float: left; width: 100%; font-size: 1.2em; margin-bottom: 5px;}
+.itens_selecionados .descricao_produto .descricao_ingredientes{float: left; width: 100%; color: red; font-weight: 300; margin-bottom: 5px; cursor: pointer;}
+.itens_selecionados .descricao_produto .descricao_ingredientes:hover{text-decoration: underline;}
+.itens_selecionados .descricao_produto .descricao_editar{float: left; width: auto; font-weight: 300; border: 1px solid #ccc; font-size: 0.9em; padding: 2px 5px; color: red; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; cursor: pointer;}
+.itens_selecionados .descricao_produto .descricao_editar:hover{background: #ccc;}
+.itens_selecionados .subtotal{float: left;}
+.itens_selecionados .produto_valor{width: 60%; float: right; margin-top: 20px; text-align: right;}
+.itens_selecionados .produto_valor span{color: red; font-weight: 300; padding-right: 5px;}
+.itens_selecionados .produto_valor img{width: 15px; margin-top: 3px; float: right;}
+
+.lista_ingredientes{display: none;}
+.lista_ingredientes p{float: left; width: 100%; font-weight: 300; margin-bottom: 10px;}
+.lista_ingredientes p span{color: red; padding-right: 5px; font-weight: 300;}
+
+.itens_selecionados .subtotal{font-weight: bold; font-size: 1.2em; float: right;} 
+.itens_selecionados .subtotal span{font-weight: bold; color: red;}
+
+.recomendados{width: 100%;}
+.recomendados h1{font-weight: bold; font-size: 1.2em; margin-bottom: 15px;}
+.recomendados .produto_recomendado{width: 100%; border: 4px solid red; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; float: left; text-align: center; padding: 15px 10px;}
+.recomendados .produto_recomendado .recomendado_img{width: 100%; float: left; margin-bottom: 10px; text-align: center;}
+.recomendados .produto_recomendado img{width: 100px;}
+.recomendados .produto_recomendado .recomendado_categoria{width: 100%; float: left; font-weight: 300; margin-bottom: 5px;}
+.recomendados .produto_recomendado .recomendado_descricao{width: 100%; float: left; font-weight: 300; margin-bottom: 5px; font-size: 1.2em;}
+.recomendados .produto_recomendado .recomendado_valor{width: 100%; float: left; font-weight: 300; color: red; margin-bottom: 10px;}
+
+.botoes_controle{text-align: center; padding: 0 20px;}
+
+
+@media(min-width: 400px){
+    .itens_selecionados img{float: left; width: 30%;}
+    .bloco_descricao{float: left; width: 40%; padding-left: 15px;}
+    .itens_selecionados .produto_valor{width: 30%;}
+}
+
+@media(min-width: 500px){
+    .itens_selecionados{max-width: 100%;}
+    .bloco_descricao{min-width: 200px; padding-left: 15px;}
+    .itens_selecionados .produto_valor{width: 30%;}
+
+}
+
+@media(min-width: 768px){
+    .botoes_controle{padding: 0; max-width: 1000px; margin: 0 auto; background: blue; float: none;}
+    .checkout .content{max-width: 1000px; margin: 0 auto;}
+    .itens_selecionados{width: 68%; margin-right: 2%;}
+    .recomendados{width: 30%; float: left;}
+
+}
+@media(min-width: 1280px){
+    .botoes_controle{max-width: 1200px; margin: 0 auto;}
+    .checkout .content{max-width: 1200px; margin: 0 auto;}
+
+}
+
+/*CHECKOUT*/
+
+
+/*CARDAPIO*/
+
+/*TOPO*/
+.bloco_cardapio_topo{position:relative; background-image: url(../Images/fundo-pizza1.jpg); background-repeat: repeat-x; background-size: cover; background-position: top left; background-attachment: fixed; height: 1010px;}
+.sombra_topo{position:absolute; background: rgba(0,0,0,0.5); width: 100%; height: 100%; top: 0; z-index: 0;}
+.logo_cardapio{position: absolute; z-index: 1; top: 25px; width: 200px; height: 100px; background: url('../Images/logo-transparente.png') no-repeat;}
+.icone-menu{position: absolute; z-index: 1; top: 30px; right: 10px; width: 60px; height: 55px; background: rgba(90,11,9,0.5); padding: 10px; cursor: pointer;}
+.icone-menu .barra{height: 8px; background: #fff; width: 100%; margin-bottom: 5px;}
+.menu_principal{position: absolute; z-index: 2; background: rgba(90,11,9,1); width: 250px; height: 50%; right: 30px; top: 95px; display: none;}
+.menu_principal ul{padding: 20px; margin-top: 20px;}
+.menu_principal ul li{width: 100%; text-align: left; padding-left: 10px; margin-bottom: 10px;}
+.menu_principal ul li a{font-weight: bold; font-size: 1.7em; font-family: 'Lobster', cursive; line-height: 1.9;}
+
+.menu_principal_topo ul li a{font-size: 0em; font-family: 'Lobster', cursive;}
+
+.mensagem{position: absolute; z-index: 1; width: 100%; left: 0; top: 170px;}
+.mensagem p{font-family: 'Lobster', cursive;}
+.mensagem .texto_central h1{font-size: 2.8em; font-family: 'Pompiere', cursive; font-weight: bold;} 
+.mensagem .texto_central p{font-size: 2em;} 
+.seta_cardapio{width: 60px; height: 60px; margin: 0 auto; margin-bottom: 50px; line-height: 2.5; font-size: 1.5em; border: 2px solid #fff; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; cursor: pointer; color: #fff;}
+.seta_cardapio:hover{background: rgba(90,11,9,0.5);}
+.telefones_cardapio{background:rgba(90,11,9,0.6); padding: 20px; max-width: 300px; margin: 0 auto; margin-top: 10px;}
+.telefones_cardapio p{font-size: 1.2em; font-family: 'Pompiere', cursive;}
+.telefones_cardapio .title{font-size: 1.2em; font-family: 'Lobster', cursive;}
+
+.slide_topo{position: fixed; z-index: 999; bottom: 60px; right: 10px; background: rgba(90,11,9,0.5); width: 50px; height: 50px; font-size: 2em; line-height: 2; cursor: pointer; display: none;}
+
+
+
+@media(min-width: 768px){
+    .menu_principal_topo{position: fixed; z-index: 2; top: 0; left: 0; width: 100%; background: rgba(90,11,9,0.9); text-align: center; display: none;}
+    .menu_principal_topo ul{width: 680px; background: red; margin: 0 auto; display: block;}
+    .menu_principal_topo ul li{display: inline-block;}
+    .menu_principal_topo ul li a{padding: 20px; line-height: 1.8; font-weight: bold; font-size: 1.8em;}
+}
+
+@media(min-width: 960px){
+    .bloco_cardapio_topo{height: 780px;}
+    .icone-menu{right: 30px;}
+    .telefones_cardapio{margin-right: 10px; float: right;}
+    .menu_principal{background: rgba(90,11,9,0.8);}
+    .menu_principal_topo ul{width: 850px;}
+    .mensagem{padding: 0;}
+}
+
+
+/*TOPO*/
+
+/*CARDAPIO*/
+.cardapio_pizzas .content{padding: 60px 0;}
+.cardapio_pizzas .cabecalho_cardapio{position: relative; background: rgba(255,255,255,0); height: 330px; padding: 20px;}
+.cardapio_pizzas header .cabecalho_info h1{font-family: 'Lobster', cursive; font-size: 2.2em !important; color: #EEC329; background: url(../Images/icon-casadipizzas.png) no-repeat; background-position-y: 5px; width: 200px; padding-left: 0px; display: block; margin: 10px auto;}
+.primeira_palavra{display: block; font-family: 'Lobster', cursive; font-size: 1.2em;}
+.refrigerantes header .cabecalho_info{margin-top: 30px;}
+.refrigerantes header .cabecalho_info h1{background: url(../Images/icon-refrigerante.png) no-repeat; background-size: 50px 50px; background-position-y: 3px;  width: 280px; padding-left: 10px; padding-top: 10px;}
+.cardapio_pizzas .cabecalho_cardapio p{color: #fff; font-size: 1.8em; font-family: 'Lobster', cursive; margin-bottom: 0;}
+.cardapio_pizzas .cabecalho_cardapio p span{font-weight: bold; color: #E3D3A7; font-family: 'Pompiere', cursive; font-size: 0.9em;}
+.cor_cardapio{background: rgba(255, 255, 255, 1); text-align: center; padding: 20px;}
+.item_cardapio{width: 100%; float: left; margin-bottom:10px;}
+.item_cardapio .contorno_cardapio h1{font-family: 'Lobster', cursive; font-size: 1.9em; color: #8F520F; font-weight: 700; background: url(../Images/icon-casadipizzas.png) no-repeat; background-position-y: 0px; padding-left: 0px;}
+.refrigerantes .item_cardapio .contorno_cardapio h1{background: url(../Images/icon-refrigerante-escuro.png) no-repeat; background-position-y: 5px; background-size: 50px 50px; padding-left: 0px; padding-top: 10px; margin-bottom: 10px}
+.refrigerantes .item_cardapio .contorno_cardapio p{padding-left: 10px;}
+.contorno_cardapio{border: 1px solid #BDB500; float: left; width: 100%; margin: 0 auto; padding: 10px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+.contorno_cardapio h1{font-family: 'Lobster', cursive;}
+.contorno_cardapio p{font-family: 'Pompiere', cursive; font-size: 1.3em;}
+.cabecalho_info{position: absolute; z-index: 1; width: 100%; left: 0; top: 10px;}
+/*.sombra_header_cardapio{position:absolute; background: rgba(0,0,0,0.8); width: 100%; height: 100%; top: 0; left:0; z-index: 0;}*/
+
+
+.cardapio_left{float: left; width: 100%;}
+.cardapio_right{float: left; width: 100%;}
+.complementos{border: 1px solid #F37402; padding: 10px; margin-bottom: 30px; padding: 20px 10px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+.complementos header{margin-bottom: 20px;}
+.complementos header h1{font-weight: bold; font-size: 2.1em; font-family: 'Lobster', cursive; color: #8F520F;}
+.complementos header p{font-family: 'Pompiere', cursive; font-size: 1.3em;}
+.complementos .content article h1{font-size: 1.8em; font-weight: bold; margin-bottom: 10px; font-family: 'Lobster', cursive; color: #8F520F;}
+.complementos .content article p{margin-bottom: 1.8px; font-family: 'Pompiere', cursive; font-size: 1.3em;}
+.complementos .content article p span{font-weight: bold; color: #381100; font-family: 'Pompiere', cursive;}
+.acrescimo_itens{text-align: center;}
+
+@media(min-width: 960px){
+    .cardapio_pizzas .cabecalho_cardapio{height: 225px;}
+    .cardapio_pizzas header .cabecalho_info h1{width: 320px; padding-left: 30px;}
+    .primeira_palavra{display: inline-block; font-size: 1.1em;}
+    .contorno_cardapio{width: 650px; text-align: left;}
+    .item_cardapio .contorno_cardapio h1{padding-left: 40px;}
+    .refrigerantes .item_cardapio .contorno_cardapio h1{padding-left: 40px;}
+    .cardapio_left{width: 79%;}
+    .cardapio_right{width: 20%;}
+    .acrescimo_itens{text-align: left;}
+}
+
+@media(min-width: 1280px){
+    .contorno_cardapio{width: 800px;}
+}
+
+@media(min-width: 1366px){
+    .contorno_cardapio{min-width: 800px;}
+}
+
+
+/*CARDAPIO*/
+
+/*FOOTER*/
+.cardapio_footer .antirodape{position:relative; background: url('../Images/fundo-pizza2.jpg') no-repeat; background-size: cover; background-attachment: fixed; width: 100%; height: 1100px; float: left;}
+.cardapio_footer .sombra_antirodape{position:absolute; background: rgba(255,255,255,0.5); width: 100%; height: 100%; top: 0; z-index: 0;}
+.cardapio_footer .grupo_bloco_cardapio_footer{position:absolute; width: 100%; height: 100%; top: 0; z-index: 1; padding: 30px 50px;}
+.cardapio_footer .bloco_cadapio_footer{background: rgba(90,11,9,0.9); color: #fff; height: 200px;}
+.cardapio_footer .bloco_cadapio_footer h1{font-family: 'Lobster', cursive; font-size: 1.4em;}
+/*.cardapio_footer .bloco_cadapio_footer.cardapio_menu_footer h1{margin-bottom: 0;}*/
+.cardapio_footer .bloco_cadapio_footer > img{width: 40px; margin-bottom: 30px;}
+.cardapio_footer .bloco_cadapio_footer.aviso-televendas img{height: 52px;}
+.cardapio_footer .bloco_cadapio_footer ul{margin-top: 0;}
+.cardapio_footer .bloco_cadapio_footer ul li{width: 100%; height: auto; margin-bottom: 5px; padding: 2px; font-size: 1.2em;}
+.cardapio_footer .bloco_cadapio_footer ul li:hover{background: none;}
+.cardapio_footer .bloco_cadapio_footer ul li a{line-height: 0; font-weight: 300; font-family: 'Lobster', cursive; font-size: 1em;}
+.cardapio_footer .bloco_cadapio_footer ul li a:hover{text-decoration: underline;}
+.cardapio_footer .bloco_cadapio_footer.aviso-televendas{height: 350px;}
+.cardapio_footer .bloco_cadapio_footer.aviso-televendas p{font-family: 'Pompiere', cursive; font-size: 1.5em;}
+.cardapio_footer .bloco_cadapio_footer.aviso-televendas span{font-family: 'Pompiere', cursive; font-size: 1em; margin-bottom: 1.2px;}
+
+.cardapio_footer .rodape{background: rgba(90,11,9,0.8); color: #fff; padding: 10px 50px; float: left; width: 100%; text-align: center;}
+.cardapio_footer .rodape .copy{font-size: 1em; font-family: 'Pompiere', cursive;}
+.cardapio_footer .rodape .assinatura{font-family: 'Pompiere', cursive; font-size: 1em;}
+.cardapio_footer .rodape .assinatura a{color: #F37402; font-family: 'Pompiere', cursive;}
+.cardapio_footer .rodape .assinatura a:hover{text-decoration: underline}
+
+
+@media(min-width: 500px){
+    .cardapio_footer .bloco_cadapio_footer{height: 300px;}
+}
+@media(min-width: 600px){
+    .cardapio_footer .antirodape{height: 750px;}
+    .cardapio_footer .bloco_cadapio_footer.aviso-televendas img{height: 52px;}
+    .cardapio_footer .bloco_cadapio_footer.aviso-televendas{height: 200px;}
+}
+
+@media(min-width: 644px){
+    .cardapio_footer .bloco_cadapio_footer.aviso-televendas img{height: 34px;}
+}
+
+@media(min-width: 711px){
+    .cardapio_footer .bloco_cadapio_footer.aviso-televendas img{height: 53px;}
+}
+
+@media(min-width: 960px){
+    .cardapio_footer .antirodape{height: 500px;}
+    .cardapio_footer .bloco_cadapio_footer{height: 200px;}
+    .cardapio_footer .bloco_cadapio_footer.aviso-televendas{height: 160px;}
+    .cardapio_footer .bloco_cadapio_footer.aviso-televendas img{height: 53px;}
+    .cardapio_footer .rodape{text-align: left;}
+    .cardapio_footer .rodape .copy{float: left;}
+    .cardapio_footer .rodape .assinatura{float: right;}
+}
+
+
+/*FOOTER*/
+
+/*CARDAPIO*/

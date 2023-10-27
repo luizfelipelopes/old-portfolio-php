@@ -1,0 +1,21 @@
+<div class="container bg-body posts-item" id="#anuncio_id#">
+    #botao_status#
+    <img title="#anuncio_title#" alt="[#anuncio_title#]" src="#imagem_anuncio##anuncio_cover#" />
+    <div class="content">
+        <div class="post-content">
+            <h1 class="posts-item-titulo">#anuncio_title#</h1>#type_registro#
+        </div>
+        <div class="container ds-inblock" id="#anuncio_id#">
+            <div class="botoes al-center">
+                <a class="btn btn-blue-baby radius shorticon shorticon-ver" title="Ver Anúncio" target="_blank" href="#HOME#"></a>
+                <a class="btn btn-blue radius shorticon shorticon-editar" title="Editar Anúncio" href="#HOME#/admin/dashboard.php?exe=anuncios/create&id=#anuncio_id#"></a>
+                <a class="btn btn-pink radius shorticon shorticon-excluir j_confirm" title="Excluir Anúncio" id="#anuncio_id#"></a>
+                <div class="bloco-confirm" id="#anuncio_id#">
+                    <small class="msg-confirm">Deseja excluir?</small>
+                    <a class="btn btn-orange btn-confirm btn-confirm-sim radius j_excluir" title="Confirmar Exclusão" href="#" attr-action="delete_anuncio" id="#anuncio_id#">Sim</a>
+                    <a class="btn btn-pink btn-confirm btn-confirm-nao radius j_cancelar" title="Cancelar Exclusão" href="#" id="#anuncio_id#">Não</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    

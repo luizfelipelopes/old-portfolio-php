@@ -1,0 +1,82 @@
+<div class="fundo-pedido fundo j_popup">
+    
+    <div class="detalhes-pedido">
+        <div class="trigger-box-suspenso"></div>
+        
+        <div class="ajax_close">X</div>
+        
+        <div class="content">
+            
+            <h1 class="al-center">Informações de Compra</h1>
+            <div class="container m-bottom1"></div>
+            
+            <div class="bloco-pedido">
+                <h1>Comprador</h1>
+                <div class="pedido-info">Nome: <span class="pedido-resposta j_nome">#cliente_name# #cliente_lastname#</span></div>
+                <div class="pedido-info">E-mail: <span class="pedido-resposta j_email">#cliente_email#</span></div>
+                <div class="pedido-info">CPF: <span class="pedido-resposta j_cpf">#cliente_cpf#</span></div>
+                <div class="pedido-info">Telefone: <span class="pedido-resposta j_ddd">(#cliente_ddd#)</span><span class="pedido-resposta j_telefone">#cliente_telefone#</span></div>
+            </div>
+
+            <div class="bloco-pedido">
+                <h1>Detalhes da Transação</h1>
+                <div class="pedido-info">Status: <span class="pedido-resposta j_status">#venda_status#</span></div>
+                <div class="pedido-info">Código de Transação: <span class="pedido-resposta j_transacao">#venda_transacao#</span></div>
+                <div class="pedido-info">Código de Referência: <span class="pedido-resposta j_referencia">#venda_registro#</span></div>
+                <div class="pedido-info">Valor: R$<span class="pedido-resposta j_valor_bruto j_total"></span></div>
+                <div class="pedido-info">Taxas: R$<span class="pedido-resposta j_taxa">#venda_taxa#</span></div>
+                <div class="pedido-info">Total Líquido: R$<span class="pedido-resposta j_valor_liquido">#venda_pag_descontado#</span></div>
+                <div class="pedido-info">Meio de Pagamento: <span class="pedido-resposta j_forma_pagamento">#venda_forma_pagamento#</span></div>
+            </div>
+
+
+            <div class="bloco-pedido">
+                <h1>Itens do Carrinho</h1>
+                <div class="bg-body">
+
+                    <div class="container linha bg-blue">
+                        <div class="content">
+                            <div class="col-15"><span>ID</span></div>
+                            <div class="col-24"><span>PRODUTO</span></div>
+                            <div class="col-20"><span>QUANTIDADE</span></div>
+                            <div class="col-20"><span>VALOR(R$)</span></div>
+                            <div class="col-20"><span>TOTAL(R$)</span></div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+
+                    <div class="j_venda_carrinho m-bottom3 container"></div>
+
+                        
+                    <div class="pedido-info">Frete(R$): R$<span class="pedido-resposta j_frete">#venda_frete#</span></div>
+                    <div class="pedido-info">Total do Carrinho(R$): R$<span class="pedido-resposta j_total_carrinho">#venda_total_frete#</span></div>
+                </div>
+            </div>
+
+            <div class="bloco-pedido">
+                <h1>Endereço de Entrega</h1>
+                <div class="pedido-info"> Endereço: <span class="pedido-resposta j_endereco">#cliente_endereco#</span></div>
+                <div class="pedido-info">Número: <span class="pedido-resposta j_numero">#cliente_numero#</span></div>
+                <div class="pedido-info">Complemento: <span class="pedido-resposta j_complemento">#cliente_complemento#</span></div>
+                <div class="pedido-info">Bairro: <span class="pedido-resposta j_bairro">#cliente_bairro#</span></div>
+                <div class="pedido-info">Cidade: <span class="pedido-resposta j_cidade">#cliente_cidade#</span></div>
+                <div class="pedido-info">Estado: <span class="pedido-resposta j_uf">#cliente_uf#</span></div>
+                <div class="pedido-info">CEP: <span class="pedido-resposta j_cep">#cliente_cep#</span></div>
+            </div>
+
+            <div class="bloco-pedido">
+                <h1>Status do Envio</h1>
+                <form action="" method="post">
+                    <select>
+                        <option>Em Andamento</option>
+                        <option>Pacote em Trânsito</option>
+                        <option>Entrega Finalizada</option>
+                    </select>
+                    <button class="btn btn-green radius m-top1">Alterar Status Envio</button>
+                </form>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>

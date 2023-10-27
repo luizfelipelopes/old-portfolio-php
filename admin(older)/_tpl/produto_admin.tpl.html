@@ -1,0 +1,21 @@
+    <div class="container bg-body posts-item" id="#produto_id#" attr-css="#posicao_css#">
+    <div class="bg-gray posts-item-views">#vendas#</div>#botao_status# #botao_disponivel#
+    #produto_desconto#
+    <img title="#produto_title#" alt="[#produto_title#]" src="#imagem_produto##produto_image#" />
+    <div class="content">
+        
+        <h1 class="posts-item-titulo">#produto_title#</h1>#categoria_data#
+        #produto_desconto_ativo#
+        <div class="b-bottom container m-bottom1"></div>
+        <div class="botoes ds-inblock al-center">
+            <a class="btn btn-blue-baby radius shorticon shorticon-ver" title="Ver Produto" target="_blank" href="#HOME#Detalhes/#produto_name#&produtoid=#produto_id##detalhes"></a>
+            <a class="btn btn-blue radius shorticon shorticon-editar" title="Editar Produto" href="#HOME##ADMIN#/dashboard.php?exe=produtos/create&id=#produto_id#"></a>
+            <a class="btn btn-pink radius shorticon shorticon-excluir j_confirm" title="Excluir Produto" id="#produto_id#"></a>
+            <div class="bloco-confirm" id="#produto_id#">
+                <small class="msg-confirm">Deseja excluir?</small>
+                <a class="btn btn-orange btn-confirm btn-confirm-sim radius j_excluir" title="Confirmar Exclusão" href="#" attr-action="delete_produto" id="#produto_id#">Sim</a>
+                <a class="btn btn-pink btn-confirm btn-confirm-nao radius j_cancelar" title="Cancelar Exclusão" href="#" id="#produto_id#">Não</a>
+            </div>
+        </div>
+    </div>
+</div>    

@@ -1,0 +1,22 @@
+<div class="container bg-body posts-item cursos-item" id="#curso_id#">
+    #botao_status#
+    <img title="#curso_title#" alt="[#curso_title#]" src="#imagem_curso##curso_cover#" />
+    <div class="content">
+        <div class="curso-info">
+            <h1 class="posts-item-titulo">#curso_title#</h1>#segmento_data#
+        </div>
+        <div class="botoes al-center">
+            <a class="btn btn-blue-baby radius shorticon shorticon-ver" title="Ver Curso" target="_blank" href="#HOME#curso/#curso_name#"></a>
+            <a class="btn btn-blue radius shorticon shorticon-editar" title="Editar Curso" href="#ADMIN#/dashboard.php?exe=cursos/create&id=#curso_id#" ></a>
+            <a class="btn btn-pink radius shorticon shorticon-excluir j_confirm" title="Excluir Curso" id="#curso_id#"></a>
+            <div class="bloco-confirm" id="#curso_id#">
+                <small class="msg-confirm">Deseja excluir?</small>
+                <a class="btn btn-orange btn-confirm btn-confirm-sim radius j_excluir" title="Confirmar Exclusão" href="#" attr-action="delete_curso" id="#curso_id#">Sim</a>
+                <a class="btn btn-pink btn-confirm btn-confirm-nao radius j_cancelar" title="Cancelar Exclusão" href="#" id="#curso_id#">Não</a>
+            </div>
+        </div>
+        <div class="container al-center m-top1">
+            <a class="btn btn-blue radius al-center" title="Gerenciar Curso" href="#ADMIN#/dashboard.php?exe=cursos/gerenciar&id=#curso_id#">Gerenciar Curso</a>
+        </div>
+    </div>
+</div>    

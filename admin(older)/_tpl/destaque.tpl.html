@@ -1,0 +1,21 @@
+<div class="container bg-body posts-item" id="#destaque_id#">
+    #botao_status#
+    <img title="#destaque_title#" alt="[#destaque_title#]" src="#imagem_destaque##destaque_cover#" />
+    <div class="content">
+        <div class="post-content">
+            <h1 class="posts-item-titulo">#destaque_title#</h1>#type_registro#
+        </div>
+        <div class="container ds-inblock" id="#destaque_id#">
+            <div class="botoes al-center">
+                <a class="btn btn-blue-baby radius shorticon shorticon-ver" title="Ver Destaque" target="_blank" href="#HOME#"></a>
+                <a class="btn btn-blue radius shorticon shorticon-editar" title="Editar Destaque" href="#HOME#/admin/dashboard.php?exe=destaques/create&id=#destaque_id#"></a>
+                <a class="btn btn-pink radius shorticon shorticon-excluir j_confirm" title="Excluir Destaque" id="#destaque_id#"></a>
+                <div class="bloco-confirm" id="#destaque_id#">
+                    <small class="msg-confirm">Deseja excluir?</small>
+                    <a class="btn btn-orange btn-confirm btn-confirm-sim radius j_excluir" title="Confirmar Exclusão" href="#" attr-action="delete_destaque" id="#destaque_id#">Sim</a>
+                    <a class="btn btn-pink btn-confirm btn-confirm-nao radius j_cancelar" title="Cancelar Exclusão" href="#" id="#destaque_id#">Não</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    

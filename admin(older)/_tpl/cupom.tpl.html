@@ -1,0 +1,22 @@
+<div class="container bg-body posts-item cupons-item" id="#cupom_id#">
+    <!--<div class="bg-gray posts-item-views">#views#</div> #botao_disponivel#-->
+    #botao_status#
+    #cupom_desconto#
+    <img title="#cupom_title#" alt="" src="" />
+    <h1 class="cupons-titulo">#cupom_codigo_img#</h1>
+    <div class="content">
+        
+        <h1 class="cupons-item-titulo m-top3"><b>Cupom código:</b> #cupom_codigo#</h1><b>Válido até:</b> #cupom_validade#
+        
+        <div class="b-bottom container m-bottom1"></div>
+        <div class="botoes botoes-cupons al-center">
+            <a class="btn btn-blue radius shorticon shorticon-editar" title="Editar Cupom" href="#HOME##ADMIN#/dashboard.php?exe=produtos/cupons/create&id=#cupom_id#"></a>
+            <a class="btn btn-pink radius shorticon shorticon-excluir j_confirm" title="Excluir Cupom" id="#cupom_id#"></a>
+            <div class="bloco-confirm bloco-confirm-produtos" id="#cupom_id#">
+                <small class="msg-confirm">Deseja excluir?</small>
+                <a class="btn btn-orange btn-confirm btn-confirm-sim radius j_excluir" title="Confirmar Exclusão" href="#" attr-action="delete_cupom" id="#cupom_id#">Sim</a>
+                <a class="btn btn-pink btn-confirm btn-confirm-nao radius j_cancelar" title="Cancelar Exclusão" href="#" id="#cupom_id#">Não</a>
+            </div>
+        </div>
+    </div>
+</div>    

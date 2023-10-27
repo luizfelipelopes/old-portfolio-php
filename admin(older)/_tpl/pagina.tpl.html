@@ -1,0 +1,21 @@
+<div class="container bg-body posts-item" id="#pagina_id#">
+    #botao_status#
+    <img title="#pagina_title#" alt="[#pagina_title#]" src="#imagem_pagina##pagina_cover#" />
+    <div class="content">
+        <div class="post-content">
+            <h1 class="posts-item-titulo">#pagina_title#</h1>#segment_registro#
+        </div>
+        <div class="container ds-inblock" id="#pagina_id#">
+            <div class="botoes al-center">
+                <a class="btn btn-blue-baby radius shorticon shorticon-ver" title="Ver Pagina" target="_blank" href="#HOME#"></a>
+                <a class="btn btn-blue radius shorticon shorticon-editar" title="Editar Pagina" href="#HOME#/admin/dashboard.php?exe=paginas/create&id=#pagina_id#"></a>
+                <a class="btn btn-pink radius shorticon shorticon-excluir j_confirm" title="Excluir Pagina" id="#pagina_id#"></a>
+                <div class="bloco-confirm" id="#pagina_id#">
+                    <small class="msg-confirm">Deseja excluir?</small>
+                    <a class="btn btn-orange btn-confirm btn-confirm-sim radius j_excluir" title="Confirmar Exclusão" href="#" attr-action="delete_pagina" id="#pagina_id#">Sim</a>
+                    <a class="btn btn-pink btn-confirm btn-confirm-nao radius j_cancelar" title="Cancelar Exclusão" href="#" id="#pagina_id#">Não</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    

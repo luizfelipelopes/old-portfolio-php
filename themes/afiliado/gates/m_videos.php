@@ -1,0 +1,142 @@
+<?php
+$GATES = [
+    "vendor" => [
+        "date" => "2020-08-17",
+        "link" => BASE . "/m_video",
+        "redirect" => false,
+    ],
+    "comments" => "https://wspp.upinside.com.br/",
+    "comment_count" => 18,
+    "video" => "ArmrWukf2xE",
+    "launch" => [
+        [
+            "title" => "Como gerar resultados e faturar alto com sua agência!",
+            "video" => "ArmrWukf2xE",
+            "date" => "2016-08-10", //ANO-MES-DIA
+            "cta" => "AULA 1. BAIXAR MATERIAL DE APOIO!",
+            "cta_link" => "https://www.upinside.com.br"
+        ],
+        [
+            "title" => "Processos que otimizam seu tempo e geram mais resultados!",
+            "video" => "MT-ALLcy9Pw",
+            "date" => "2016-08-15", //ANO-MES-DIA
+            "cta" => "AULA 2. BAIXAR MAPA DE PROCESSOS!",
+            "cta_link" => "https://www.upinside.com.br/curso/curso-activecampaign"
+        ],
+        [
+            "title" => "Conheça o método e as tecnicas do projeto e produção",
+            "video" => "vTboVugG5bs",
+            "date" => "2016-08-16", //ANO-MES-DIA
+            "cta" => null,
+            "cta_link" => null
+        ],
+        [
+            "title" => "<b>MATRÍCULAS ABERTAS:</b> Descubra o projeto e produção!",
+            "video" => "8tiNK1MhRJY",
+            "date" => "2030-09-25", //ANO-MES-DIA
+            "cta" => null,
+            "cta_link" => null
+        ],
+        [
+            "title" => "<b>AULA BÔNUS:</b> Suas perguntas respondidas!",
+            "video" => "wZhDfNlvn1g",
+            "date" => "2015-09-28", //ANO-MES-DIA
+            "cta" => null,
+            "cta_link" => null
+        ],
+    ]
+];
+
+if ($GATES['vendor']['redirect'] && date('Y-m-d') >= $GATES['vendor']['date']):
+    header("location: {$GATES['vendor']['link']}");
+endif;
+?>
+<div class="lp_gates_videos">
+    <div class="content">
+        <div class="lp_gates_videos_content">
+            <div class="lp_gates_videos_content_yt">
+                <div class="embed-container">
+                    <iframe class="j_play_this" width="853" height="480" src="https://www.youtube.com/embed/<?= $GATES['video']; ?>?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div><nav class="lp_gates_videos_content_nav">
+                <?php
+                $vCount = 0;
+                $vActive = 0;
+                foreach ($GATES['launch'] as $Launch):
+                    $vCount ++;
+                    $vActive ++;
+                    $vStatus = (date("Y-m-d") >= $Launch['date'] ? "DIPOSNÍVEL" : date("d/m", strtotime($Launch['date'])));
+                    ?>
+                    <article class="lp_gates_videos_content_nav_item <?= $vActive == 1 ? "active_item bg_{$OPTIIN['ac_button_color']}" : ""; ?> j_launch_play" id="<?= $vStatus == "DIPOSNÍVEL" ? $Launch['video'] : null; ?>">
+                        <div class="thumb">
+                            <img src="https://i1.ytimg.com/vi/<?= $Launch['video']; ?>/mqdefault.jpg" alt="<?= $Launch['title']; ?>" title="<?= $Launch['title']; ?>"/>
+                            <?php
+                            if ($vStatus != "DIPOSNÍVEL"):
+                                echo "<div class='false_bg'></div>";
+                            endif;
+                            ?>
+                        </div><div class="info">
+                            <?php
+                            if ($vStatus != "DIPOSNÍVEL"):
+                                echo "<p>AULA {$vCount}. " . "DIA " . date("d/m", strtotime($Launch['date'])) . "</p>";
+                                $vHolder = null;
+                            else:
+                                echo "<p>AULA {$vCount}. DIPOSNÍVEL</p>";
+                                $vHolder = "active color_{$OPTIIN['ac_button_color']}";
+                            endif;
+                            ?>
+                            <h1 class="<?= $vHolder; ?>"><?= $Launch['title']; ?></h1>
+                            <link rel="download" class="j_download" title="<?= $Launch['cta']; ?>" href="<?= $Launch['cta_link']; ?>"/>
+                        </div>
+                    </article>
+                    <?php
+                endforeach;
+                ?>
+            </nav>
+        </div>
+        <a style="<?= $GATES['launch'][0]['cta'] ? "display: block;" : "display: none;"; ?>" target="_blank" href="<?= $GATES['launch'][0]['cta_link']; ?>" title="<?= $GATES['launch'][0]['cta']; ?>" class="lp_gates_video_cta btn btn_<?= $OPTIIN['ac_button_color']; ?>"><?= $GATES['launch'][0]['cta']; ?></a>
+    </div>
+</div>
+
+<div class="lp_gates_share">
+    <iframe class="lp_gates_share_item" src="https://www.facebook.com/plugins/share_button.php?href=<?= BASE; ?>&layout=button_count&size=large&mobile_iframe=true&width=143&height=28" width="156" height="40" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+    <iframe class="lp_gates_share_item" src="https://platform.twitter.com/widgets/tweet_button.html?size=l&url=<?= BASE; ?>&via=<?= $SEO['twitter']; ?>&text=<?= strip_tags($OPTIIN['headline']); ?>" width="77" height="40" title="Enviar para o Twitter!" style="border:none;overflow:hidden" frameborder="0" allowTransparency="true"></iframe>
+</div>
+
+<section class="lp_gates_more">
+    <div class="content">
+        <div class="lp_gates_more_social">
+            <article>
+                <h1>1 - Inscreva-se e acompanhe:</h1>
+                <div class="box box2">
+                    <div class="fb-like" data-href="https://facebook.com/<?= $SEO['fb_page']; ?>" data-layout="standard" data-action="like" data-show-faces="true" data-share="false" data-width="240"></div>
+                </div><div class="box box2">
+                    <script src="https://apis.google.com/js/platform.js"></script>
+                    <div class="g-ytsubscribe" data-channel="<?= $SEO['yt_channel']; ?>" data-layout="full" data-count="default"></div>
+                </div>
+            </article>
+
+            <article>
+                <h1>2 - Deixe aqui um comentário:</h1>
+                <div class="fb-comments" data-href="<?= $GATES['comments']; ?>" data-width="100%" data-numposts="<?= $GATES['comment_count']; ?>"></div>
+            </article>
+
+        </div><aside class="lp_social lp_gates_more_reviews">
+            <h1 class="title"><?= $SECTIONS[2]; ?></h1>
+            <?php require 'require/reviews.php'; ?>
+        </aside>
+    </div>
+</section>
+
+<div id="fb-root"></div>
+<script>
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id))
+            return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.7";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>

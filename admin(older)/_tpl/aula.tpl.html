@@ -1,0 +1,32 @@
+            <article class="container ultimos-pedidos m-bottom3 aula" id="#aula_id#">
+
+                <header class="bg-green-claro aula-cabecalho">
+                    <div class="content">
+                        <h1 class="shorticon shorticon-pedidos caps-lock font-bold">#aula_title#</h1>
+                        <div class="clear"></div>
+                    </div>    
+                    <div class="clear"></div>
+                </header>
+
+
+                <div class="container linha bg-body" id="#aula_id#">
+                    <div class="content al-center">
+                        <div class="aula-nome m-bottom1"><span class="font-bold">#modulo_title#</span></div>
+                        <div class="aula-data radius"><span>#aula_date#</span></div>
+
+                        <div class="botoes aula-botoes">
+                            <div class="aula-botao ds-inblock"><a class="btn btn-blue radius shorticon shorticon-editar" title="Editar Aula" href="?exe=cursos/aula&id=#aula_id#&curso=#curso_id#&modulo=#modulo_id#"></a></div>
+                            <div class="aula-botao ds-inblock"><a class="btn btn-green radius shorticon shorticon-ver" title="Ver Aula" target="_blank" href="#HOME#/plataforma/?exe=aula&id=#aula_id#&name=#aula_name#&tutor=true"></a></div>
+                            <div class="aula-botao ds-inblock j_confirm"><a class="btn btn-red radius shorticon shorticon-excluir" title="Excluir Aula" href="#"></a></div>
+                            <div class="bloco-confirm" id="#aula_id#">
+                                <small class="msg-confirm">Deseja excluir?</small>
+                                <a class="btn btn-orange btn-confirm btn-confirm-sim radius j_excluir" title="Confirmar Exclusão" href="#" attr-action="delete_aula" id="#aula_id#">Sim</a>
+                                <a class="btn btn-pink btn-confirm btn-confirm-nao radius j_cancelar" title="Cancelar Exclusão" href="#" id="#aula_id#">Não</a>
+                            </div>
+                        </div> 
+                        <div class="clear"></div>
+                    </div>
+
+                </div>
+                <div class="clear"></div>
+            </article>

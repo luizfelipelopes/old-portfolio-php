@@ -1,0 +1,19 @@
+<div class="container bg-body posts-item" id="#post_id#">
+    <div class="bg-gray posts-item-views">#views#</div>#botao_status#
+    <img title="#post_title#" alt="[#post_title#]" src="#imagem_post##post_cover#" />
+    <div class="content">
+        <div class="post-content">
+            <h1 class="posts-item-titulo" title="#post_title#">#post_title_resumido#</h1>#categoria_data#
+        </div>
+        <div class="botoes al-center">
+            <a class="btn btn-blue-baby radius shorticon shorticon-ver" title="Ver Post" target="_blank" href="#HOME#/post/#post_name#"></a>
+            <a class="btn btn-blue radius shorticon shorticon-editar" title="Editar Post" href="#HOME#/#ADMIN#/dashboard.php?exe=posts/create&id=#post_id#"></a>
+            <a class="btn btn-pink radius shorticon shorticon-excluir j_confirm" title="Excluir Post" id="#post_id#"></a>
+            <div class="bloco-confirm" id="#post_id#">
+                <small class="msg-confirm">Deseja excluir?</small>
+                <a class="btn btn-orange btn-confirm btn-confirm-sim radius j_excluir" title="Confirmar Exclusão" href="#" attr-action="delete_post" id="#post_id#">Sim</a>
+                <a class="btn btn-pink btn-confirm btn-confirm-nao radius j_cancelar" title="Cancelar Exclusão" href="#" id="#post_id#">Não</a>
+            </div>
+        </div>
+    </div>
+</div>    

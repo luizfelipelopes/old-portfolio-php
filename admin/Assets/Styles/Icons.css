@@ -1,0 +1,306 @@
+/* 
+    Created on : 10/08/2018, 23:26:57
+    Author     : Luiz Felipe
+*/
+
+@font-face {
+    font-family: "flowstate";
+    src:url("fonts/flowstate.eot");
+    src:url("fonts/flowstate.eot?#iefix") format("embedded-opentype"),
+        url("fonts/flowstate.woff") format("woff"),
+        url("fonts/flowstate.ttf") format("truetype"),
+        url("fonts/flowstate.svg#flowstate") format("svg");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+[data-icon]:before {
+    font-family: "flowstate" !important;
+    content: attr(data-icon);
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    font-family: "flowstate" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    top: .125em;
+    margin-right: .4em;
+}
+
+.icon-notext:before, .icon-notext:after, .icon-notext{
+    top: 0;
+    margin-right: 0;
+}
+
+/*ICONS*/
+
+.icon-user:before {
+    content: "\62";
+}
+.icon-bars:before {
+    content: "\61";
+}
+.icon-help:before {
+    content: "\63";
+}
+.icon-arrow-right:before {
+    content: "\64";
+}
+.icon-home:before {
+    content: "\65";
+}
+.icon-post:before {
+    content: "\66";
+}
+.icon-comment:before {
+    content: "\67";
+}
+.icon-users:before {
+    content: "\68";
+}
+.icon-mail:before {
+    content: "\69";
+}
+.icon-goto:before {
+    content: "\6a";
+}
+.icon-config:before {
+    content: "\6b";
+}
+.icon-globe:before {
+    content: "\6c";
+}
+.icon-testimonial:before {
+    content: "\6d";
+}
+.icon-featured:before {
+    content: "\6e";
+}
+.icon-line-chart:before {
+    content: "\70";
+}
+.icon-bar-chart:before {
+    content: "\71";
+}
+.icon-area-chart:before {
+    content: "\72";
+}
+.icon-dollar:before {
+    content: "\73";
+}
+.icon-eye-big:before {
+    content: "\74";
+}
+.icon-eye:before {
+    content: "\6f";
+}
+.icon-check:before {
+    content: "\75";
+}
+.icon-money:before {
+    content: "\76";
+}
+.icon-edit:before {
+    content: "\77";
+}
+.icon-edit-square:before {
+    content: "\78";
+}
+.icon-delete-circle:before {
+    content: "\79";
+}
+.icon-trash:before {
+    content: "\7a";
+}
+.icon-two-users:before {
+    content: "\41";
+}
+.icon-arrow-down:before {
+    content: "\42";
+}
+.icon-arrow-right-double:before {
+    content: "\43";
+}
+.icon-alert-triangle:before {
+    content: "\44";
+}
+.icon-tag:before {
+    content: "\45";
+}
+.icon-folder:before {
+    content: "\46";
+}
+.icon-file:before {
+    content: "\47";
+}
+.icon-search:before {
+    content: "\48";
+}
+.icon-check-square:before {
+    content: "\49";
+}
+.icon-clock:before {
+    content: "\4a";
+}
+.icon-star:before {
+    content: "\4b";
+}
+.icon-star-out:before {
+    content: "\4c";
+}
+.icon-star-half:before {
+    content: "\4d";
+}
+.icon-check-circle:before {
+    content: "\4e";
+}
+.icon-info-circle:before {
+    content: "\4f";
+}
+.icon-error-circle:before {
+    content: "\50";
+}
+.icon-exit:before {
+    content: "\51";
+}
+.icon-turn-menu:before {
+    content: "\52";
+}
+
+/*LOADING*/
+@keyframes lds-facebook_1 {
+    0% {
+        top: 52px;
+        height: 96px;
+    }
+    50% {
+        top: 70px;
+        height: 60px;
+    }
+    100% {
+        top: 70px;
+        height: 60px;
+    }
+}
+@-webkit-keyframes lds-facebook_1 {
+    0% {
+        top: 52px;
+        height: 96px;
+    }
+    50% {
+        top: 70px;
+        height: 60px;
+    }
+    100% {
+        top: 70px;
+        height: 60px;
+    }
+}
+@keyframes lds-facebook_2 {
+    0% {
+        top: 56.49999999999999px;
+        height: 87.00000000000001px;
+    }
+    50% {
+        top: 70px;
+        height: 60px;
+    }
+    100% {
+        top: 70px;
+        height: 60px;
+    }
+}
+@-webkit-keyframes lds-facebook_2 {
+    0% {
+        top: 56.49999999999999px;
+        height: 87.00000000000001px;
+    }
+    50% {
+        top: 70px;
+        height: 60px;
+    }
+    100% {
+        top: 70px;
+        height: 60px;
+    }
+}
+@keyframes lds-facebook_3 {
+    0% {
+        top: 61px;
+        height: 78px;
+    }
+    50% {
+        top: 70px;
+        height: 60px;
+    }
+    100% {
+        top: 70px;
+        height: 60px;
+    }
+}
+@-webkit-keyframes lds-facebook_3 {
+    0% {
+        top: 61px;
+        height: 78px;
+    }
+    50% {
+        top: 70px;
+        height: 60px;
+    }
+    100% {
+        top: 70px;
+        height: 60px;
+    }
+}
+.lds-facebook {
+    position: relative;
+}
+.lds-facebook div {
+    position: absolute;
+    width: 30px;
+}
+.lds-facebook div:nth-child(1) {
+    left: 35px;
+    background: #f5f5f5;
+    -webkit-animation: lds-facebook_1 1s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+    animation: lds-facebook_1 1s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+    -webkit-animation-delay: -0.2s;
+    animation-delay: -0.2s;
+}
+.lds-facebook div:nth-child(2) {
+    left: 85px;
+    background: #f5f5f5;
+    -webkit-animation: lds-facebook_2 1s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+    animation: lds-facebook_2 1s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+    -webkit-animation-delay: -0.1s;
+    animation-delay: -0.1s;
+}
+.lds-facebook div:nth-child(3) {
+    left: 135px;
+    background: #f5f5f5;
+    -webkit-animation: lds-facebook_3 1s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+    animation: lds-facebook_3 1s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook {
+    width: 183px !important;
+    height: 183px !important;
+    -webkit-transform: translate(-91.5px, -91.5px) scale(0.915) translate(91.5px, 91.5px);
+    transform: translate(-91.5px, -91.5px) scale(0.915) translate(91.5px, 91.5px);
+}
