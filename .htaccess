@@ -1,0 +1,40 @@
+RewriteEngine On
+Options All -Indexes
+
+#REDIRECIONA PARA HTTPS
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ http://%{HTTP_HOST}%{REQUEST_URI} [L,NE,R=301]
+
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|xml|gz)$">
+    Header append Vary: Accept-Encoding
+  </FilesMatch>
+</IfModule>
+
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType text/css "access 0 seconds"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType text/javascript "access 0 seconds"
+ExpiresByType application/javascript "access 0 seconds"
+ExpiresByType application/x-javascript "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 2 days"
+</IfModule>
+## EXPIRES CACHING ##
+
+# php_value max_input_vars 800000
+# php_value max_input_time 3600
+# php_value upload_max_filesize "128M"
+# php_value suhosin.post.max_vars 800000
+# php_value suhosin.request.max_vars 800000
