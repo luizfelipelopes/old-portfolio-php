@@ -104,8 +104,8 @@ if ($_SERVER['SERVER_NAME'] == 'localhost'):
     define('HOME', 'http://localhost:4500');
     define('HOME_ADMIN', 'http://localhost:4500');
 else:
-    define('HOME', 'https://site-name.com');
-    define('HOME_ADMIN', (!empty($SITE_URL) ? $SITE_URL : 'https://site-name.com'));
+    define('HOME', 'https://portfolio-php-9745e96b81dc.herokuapp.com');
+    define('HOME_ADMIN', (!empty($SITE_URL) ? $SITE_URL : 'https://portfolio-php-9745e96b81dc.herokuapp.com'));
 endif;
 
 //TEMAS POR SESSÃO
