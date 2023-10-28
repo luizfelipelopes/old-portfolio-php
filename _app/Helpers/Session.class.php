@@ -117,7 +117,8 @@ class Session {
     //Verifica e atualiza os pageviews
     private function TrafficUpdate() {
         $this->getTraffic();
-        $ArrSiteViews = ['siteviews_pages' => $this->Traffic['siteviews_pages'] + 1];
+        $traffic = $this->Traffic['siteviews_pages'];
+        $ArrSiteViews = ['siteviews_pages' => ($traffic ? $traffic : 0) + 1];
         $updatePageViews = new Update;
         $updatePageViews->ExeUpdate(SITEVIEWS, $ArrSiteViews, "WHERE siteviews_date = :date", "date={$this->Date}");
 
