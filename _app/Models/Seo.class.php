@@ -21,8 +21,8 @@ class Seo {
     private $seoData;
 
     public function __construct($File, $Link, $Local, $Id = null) {
-        $this->File = strip_tags(trim($File));
-        $this->Link = strip_tags(trim($Link));
+        $this->File = $File ? strip_tags(trim($File)) : null;
+        $this->Link = $Link ? strip_tags(trim($Link)) : null;
         $this->Id = (!empty($Id) ? $Id : null);
         $this->Local = $Local[0];
     }
