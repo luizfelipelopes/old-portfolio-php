@@ -10,6 +10,7 @@ class Link {
 
     private $File;
     private $Link;
+    private $Id;
 
     /** DATA */
     private $Local;
@@ -54,7 +55,8 @@ class Link {
                 && $this->Local[0] != 'cadastrar' 
                 && $this->Local[0] != ARQUIVO_INDEX ? 'encaminhador-content' : $this->Local[0]) : 'index');
         $this->Link = (isset($this->Local[1]) ? $this->Local[1] : null);
-        $this->Id = strip_tags(trim(filter_input(INPUT_GET, 'produtoid', FILTER_DEFAULT)));
+        $filterInput = filter_input(INPUT_GET, 'produtoid', FILTER_DEFAULT);
+        $this->Id = $filterInput ? strip_tags(trim($filterInput)) : null;
         $this->Seo = new Seo($this->File, $this->Link, $this->Local, $this->Id);
     }
 

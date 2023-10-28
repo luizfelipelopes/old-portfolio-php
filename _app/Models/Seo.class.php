@@ -13,6 +13,7 @@ class Seo {
     private $Data;
     private $Tags;
     private $Id;
+    private $Local;
 
 
     /* DADOS POVOADOS */
